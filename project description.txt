@@ -54,3 +54,25 @@ Database: MySQL
 Dependency Manager: Composer 
 
 Server: Apache
+
+Project #3:
+
+role: Harrold Resma – Mobile App Developer and team lead
+
+Fridgewatch: An Application That Detects If A Refrigerator Door Has Been Left Open For Too Long. Alerts And Status Are Stored In The Cloud And Viewable Through A Mobile App.
+
+Brief overview of the proposed system:
+The proposed system, FridgeWatch, is an Internet of Things (IoT) solution designed to monitor the status of a refrigerator door. A common issue in households and businesses is leaving refrigerator doors unintentionally open, which leads to food spoilage, increased electricity consumption, and reduced appliance lifespan. FridgeWatch addresses this problem by using a magnetic reed switch sensor connected to an ESP32 microcontroller to detect whether the refrigerator door is open or closed.
+
+When the door remains open for longer than a predefined threshold, the system triggers an alert. This status is transmitted via Wi-Fi to a cloud platform (Firebase), where the data is stored and made accessible through a dedicated mobile application. The application provides real-time monitoring, status updates, and alerts, ensuring users are notified promptly and can take corrective action.
+
+Connectivity Specifications
+Protocol: Wi-Fi 802.11 b/g/n (ESP32 connects to local Wi-Fi network)
+Data Transmission: HTTPS (REST API) / WebSocket (for real-time updates)
+Cloud Service: Firebase Realtime Database
+Authentication: Firebase Authentication (API key & app credentials)
+Notification Service: Firebase Cloud Messaging (FCM) for push alerts
+Mobile Access: Android application connected to Firebase SDK for data sync and
+notifications
+
+I pretty much made the aapp using androistudio

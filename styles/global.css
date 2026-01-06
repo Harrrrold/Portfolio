@@ -748,6 +748,32 @@ section {
     color: var(--text-secondary);
 }
 
+.hardware-table {
+    margin-top: var(--spacing-md);
+    display: grid;
+    gap: var(--spacing-sm);
+}
+
+.hardware-item {
+    padding: var(--spacing-md);
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+    transition: var(--transition-normal);
+}
+
+.hardware-item:hover {
+    box-shadow: var(--shadow-sm);
+    transform: translateX(4px);
+}
+
+.hardware-item strong {
+    color: var(--secondary-color);
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-size: 1rem;
+}
+
 /* ============================================
    Image Modal / Lightbox
    ============================================ */

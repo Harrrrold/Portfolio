@@ -438,6 +438,132 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- FridgeWatch Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title-section">
+                        <h3 class="project-title">FridgeWatch</h3>
+                        <p class="project-subtitle">An Application That Detects If A Refrigerator Door Has Been Left Open For Too Long. Alerts And Status Are Stored In The Cloud And Viewable Through A Mobile App.</p>
+                        <span class="project-badge">IoT Project</span>
+                    </div>
+                </div>
+                
+                <div class="project-content">
+                    <div class="project-description">
+                        <h4>Project Overview</h4>
+                        <p>
+                            FridgeWatch is an Internet of Things (IoT) solution designed to monitor the status of a refrigerator door. 
+                            A common issue in households and businesses is leaving refrigerator doors unintentionally open, which leads to 
+                            food spoilage, increased electricity consumption, and reduced appliance lifespan. FridgeWatch addresses this problem 
+                            by using a magnetic reed switch sensor connected to an ESP32 microcontroller to detect whether the refrigerator door is open or closed.
+                        </p>
+                        <p>
+                            When the door remains open for longer than a predefined threshold, the system triggers an alert. This status is transmitted 
+                            via Wi-Fi to a cloud platform (Firebase), where the data is stored and made accessible through a dedicated mobile application. 
+                            The application provides real-time monitoring, status updates, and alerts, ensuring users are notified promptly and can take corrective action.
+                        </p>
+                        
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li><strong>Real-time Monitoring:</strong> Continuous monitoring of refrigerator door status</li>
+                            <li><strong>Smart Alerts:</strong> Automatic notifications when door is left open beyond threshold</li>
+                            <li><strong>Cloud Storage:</strong> All status updates and activity logs stored in Firebase</li>
+                            <li><strong>Mobile App:</strong> Android application for viewing status and receiving notifications</li>
+                            <li><strong>Activity Logs:</strong> Historical tracking of door open/close events</li>
+                            <li><strong>Wi-Fi Connectivity:</strong> Seamless connection to local Wi-Fi network</li>
+                        </ul>
+                        
+                        <h4>Hardware Components</h4>
+                        <div class="hardware-table">
+                            <div class="hardware-item">
+                                <strong>Microcontroller:</strong> ESP32 (Dual-core, 2.4GHz Wi-Fi) - Data processing & Wi-Fi connection
+                            </div>
+                            <div class="hardware-item">
+                                <strong>Magnetic Reed Switch:</strong> GPS-30 - Detects presence or absence of magnetic field (Normally open/closed contacts, 10-30V operating range)
+                            </div>
+                            <div class="hardware-item">
+                                <strong>Power Supply:</strong> USB 2.0 Cable (5V/3A) - Provides stable power and programming interface
+                            </div>
+                            <div class="hardware-item">
+                                <strong>Prototyping:</strong> Breadboard (MB-102, 830 tie-points) and Jumper Wires (22 AWG) - For circuit prototyping
+                            </div>
+                        </div>
+                        
+                        <h4>Connectivity Specifications</h4>
+                        <ul>
+                            <li><strong>Protocol:</strong> Wi-Fi 802.11 b/g/n (ESP32 connects to local Wi-Fi network)</li>
+                            <li><strong>Cloud Service:</strong> Firebase Realtime Database</li>
+                            <li><strong>Mobile Access:</strong> Android application connected to Firebase SDK for data sync and notifications</li>
+                        </ul>
+                        
+                        <div class="project-role">
+                            <strong>Role:</strong> Mobile App Developer & Team Lead
+                        </div>
+                        
+                        <div class="tech-stack-section">
+                            <h4>Technology Stack</h4>
+                            <div class="tech-stack-grid">
+                                <div class="tech-category">
+                                    <h5>Mobile Development</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">Android Studio</span>
+                                        <span class="tech-tag">Java / Kotlin</span>
+                                    </div>
+                                </div>
+                                <div class="tech-category">
+                                    <h5>Hardware</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">ESP32 Microcontroller</span>
+                                        <span class="tech-tag">Magnetic Reed Switch</span>
+                                    </div>
+                                </div>
+                                <div class="tech-category">
+                                    <h5>Cloud Services</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">Firebase Realtime Database</span>
+                                    </div>
+                                </div>
+                                <div class="tech-category">
+                                    <h5>Connectivity</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">Wi-Fi 802.11 b/g/n</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-images">
+                        <h4>Mobile Application Screenshots</h4>
+                        <div class="app-demo-notice">
+                            <div class="demo-notice-content">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <div class="demo-notice-text">
+                                    <strong>Interested in trying FridgeWatch?</strong>
+                                    <p>Contact me via email at <a href="mailto:official.harroldresma@gmail.com?subject=FridgeWatch Demo Request">official.harroldresma@gmail.com</a> to request a demo of the FridgeWatch mobile application.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-grid mobile-grid">
+                            <div class="image-item">
+                                <img src="../assets/fridgewatchAppLogin.jpg" alt="FridgeWatch Mobile Login Screen" class="modal-image" data-src="../assets/fridgewatchAppLogin.jpg" data-alt="FridgeWatch Mobile Login Screen">
+                                <p class="image-caption">Login Screen</p>
+                            </div>
+                            <div class="image-item">
+                                <img src="../assets/fridgewatchAppDashboard.jpg" alt="FridgeWatch Mobile Dashboard" class="modal-image" data-src="../assets/fridgewatchAppDashboard.jpg" data-alt="FridgeWatch Mobile Dashboard">
+                                <p class="image-caption">Dashboard & Door Status</p>
+                            </div>
+                            <div class="image-item">
+                                <img src="../assets/fridgewatchAppNotification.jpg" alt="FridgeWatch Mobile Notifications" class="modal-image" data-src="../assets/fridgewatchAppNotification.jpg" data-alt="FridgeWatch Mobile Notifications">
+                                <p class="image-caption">Activity Logs & Notifications</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -482,7 +608,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Harrold Resma. All rights reserved.</p>
+            <p>&copy; 2026 Harrold Resma. All rights reserved.</p>
         </div>
     </footer>
 
