@@ -965,6 +965,7 @@ section {
     box-shadow: var(--shadow-sm);
     transition: var(--transition-normal);
     color: var(--text-primary);
+    cursor: pointer;
 }
 
 .contact-item:hover {
