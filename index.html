@@ -486,13 +486,13 @@
                                 Visit Live Web App
                             </a>
 
-                            <a href="mailto:official.harroldresma@gmail.com?subject=SmartQuest Mobile App Demo Request" class="btn btn-secondary btn-sm">
+                            <button type="button" class="btn btn-secondary btn-sm demo-copy-btn" data-copy="official.harroldresma@gmail.com" aria-label="Copy email to request SmartQuest RPG client demo">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                                 </svg>
-                                Request RPG Client Demo
-                            </a>
+                                <span class="btn-text">Request RPG Client Demo</span>
+                            </button>
                         </div>
 
                         <!-- Gallery / Screenshots -->
@@ -556,13 +556,13 @@
 
                         <!-- Actions Bar -->
                         <div class="project-actions">
-                            <a href="mailto:official.harroldresma@gmail.com?subject=BookTrack Demo Request" class="btn btn-secondary btn-sm">
+                            <button type="button" class="btn btn-secondary btn-sm demo-copy-btn" data-copy="official.harroldresma@gmail.com" aria-label="Copy email to request BookTrack demo">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                                 </svg>
-                                Request System Demo
-                            </a>
+                                <span class="btn-text">Request System Demo</span>
+                            </button>
                         </div>
 
                         <!-- Gallery / Screenshots -->
@@ -796,6 +796,38 @@
 
         setupCopyItem('email-contact', 'email-text', 'email-copy-pill');
         setupCopyItem('phone-contact', 'phone-text', 'phone-copy-pill');
+
+        // Setup Demo Request Copy Buttons
+        document.querySelectorAll('.demo-copy-btn').forEach(btn => {
+            const copyVal = btn.getAttribute('data-copy');
+            const textSpan = btn.querySelector('.btn-text');
+            const originalText = textSpan ? textSpan.textContent : btn.textContent;
+
+            btn.addEventListener('click', () => {
+                navigator.clipboard.writeText(copyVal).then(() => {
+                    btn.classList.add('copied');
+                    if (textSpan) textSpan.textContent = 'Email Copied! ✓';
+                    setTimeout(() => {
+                        btn.classList.remove('copied');
+                        if (textSpan) textSpan.textContent = originalText;
+                    }, 2500);
+                }).catch(() => {
+                    const textArea = document.createElement('textarea');
+                    textArea.value = copyVal;
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textArea);
+
+                    btn.classList.add('copied');
+                    if (textSpan) textSpan.textContent = 'Email Copied! ✓';
+                    setTimeout(() => {
+                        btn.classList.remove('copied');
+                        if (textSpan) textSpan.textContent = originalText;
+                    }, 2500);
+                });
+            });
+        });
 
         // 5. Lightbox Modal Functionality
         const modal = document.getElementById('imageModal');

@@ -395,11 +395,13 @@ section {
    ============================================ */
 
 .hero {
-    min-height: 92vh;
+    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
-    padding-top: 110px;
-    padding-bottom: var(--spacing-2xl);
+    padding-top: 90px;
+    padding-bottom: var(--spacing-xl);
+    box-sizing: border-box;
     position: relative;
 }
 
@@ -557,23 +559,33 @@ section {
 
 .avatar-floating-card {
     position: absolute;
-    bottom: 8px;
-    right: -10px;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
     background: rgba(24, 24, 27, 0.95);
     backdrop-filter: blur(10px);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
-    padding: 8px 14px;
+    padding: 8px 16px;
     display: flex;
     align-items: center;
     gap: 10px;
     box-shadow: var(--shadow-md);
     z-index: 3;
+    white-space: nowrap;
 }
 
 .floating-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.3);
     color: #10b981;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
 .floating-text-primary {
@@ -653,13 +665,23 @@ section {
     border-radius: var(--radius-sm);
 }
 
+.demo-copy-btn {
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.demo-copy-btn.copied {
+    background: rgba(16, 185, 129, 0.15) !important;
+    border-color: #10b981 !important;
+    color: #34d399 !important;
+}
+
 /* ============================================
    About Section
    ============================================ */
 
 .about {
     background: var(--bg-surface);
-    border-top: 1px solid var(--border-subtle);
     border-bottom: 1px solid var(--border-subtle);
 }
 
@@ -1460,8 +1482,10 @@ section {
     }
     
     .avatar-floating-card {
-        right: 0;
-        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+        bottom: -16px;
     }
     
     .hamburger {
