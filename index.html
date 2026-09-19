@@ -166,7 +166,7 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Background</span>
+                <span class="section-tag">01 // Background</span>
                 <h2 class="section-title">About Me</h2>
                 <p class="section-subtitle">
                     Engineering scalable backend architectures, clean API interfaces, and resilient web experiences.
@@ -324,7 +324,7 @@
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Tech Stack</span>
+                <span class="section-tag">02 // Tech Stack</span>
                 <h2 class="section-title">Categorized Skills</h2>
                 <p class="section-subtitle">
                     Modern tooling and technologies utilized across backend services, frontend frameworks, and cloud
@@ -423,11 +423,11 @@
         </div>
     </section>
 
-    <!-- Projects Section (3 Core Systems) -->
+    <!-- Projects Section (4 Core Systems) -->
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Core Systems</span>
+                <span class="section-tag">03 // Core Systems</span>
                 <h2 class="section-title">Featured Projects</h2>
                 <p class="section-subtitle">
                     Production systems showcasing commercial API pipelines, full-stack architectures, and robust web
@@ -438,201 +438,307 @@
             <div class="projects-wrapper">
                 <!-- Project 1: B2B Lead Intelligence & Internal Tooling (N-Compass TV) -->
                 <article class="project-card featured-enterprise">
-                    <div class="project-header-bar">
-                        <div class="project-branding">
-                            <img src="assets/n-compass logo.jpg" alt="N-Compass TV Logo" class="project-logo-thumb">
-                            <div class="project-header-titles">
-                                <h3 class="project-title">B2B Lead Intelligence & Internal Tooling</h3>
-                                <div class="project-role-tag">N-Compass TV &bull; Role: Software Engineer Intern
-                                    (Commercial)</div>
-                            </div>
-                        </div>
-                        <span class="project-badge-pill badge-enterprise">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                            </svg>
-                            Enterprise Production — Proprietary Code
-                        </span>
-                    </div>
-
-                    <div class="project-body">
-                        <p class="project-summary-lead">
-                            Commercial software engineering project delivering automated data acquisition pipelines and
-                            developer productivity tooling for enterprise sales operations. Engineered backend REST
-                            services with FastAPI, integrated Supabase PostgreSQL with AWS S3 storage, and powered
-                            real-time team workflow tooling.
-                        </p>
-
-                        <!-- Tech Stack Bar -->
-                        <div class="project-tech-bar">
-                            <span class="tech-bar-label">Stack:</span>
-                            <span class="tech-pill">Python</span>
-                            <span class="tech-pill">FastAPI</span>
-                            <span class="tech-pill">Angular</span>
-                            <span class="tech-pill">PostgreSQL (Supabase)</span>
-                            <span class="tech-pill">AWS S3</span>
-                            <span class="tech-pill">Postman</span>
-                            <span class="tech-pill">Gemini Flash</span>
-                        </div>
-
-                        <!-- Key Metrics & Engineering Achievements Grid -->
-                        <div class="metrics-grid">
-                            <div class="metric-card">
-                                <div class="metric-stat metric-stat-accent">~50% <span
-                                        style="font-size: 0.9rem; font-weight: normal; color: var(--text-secondary);">Cost
-                                        Cut</span></div>
-                                <div class="metric-title">Async Scraping Pipelines</div>
-                                <p class="metric-desc">Engineered resilient, asynchronous data scraping pipelines using
-                                    Bright Data & SerpApi, cutting API operating costs by ~50% through batching and
-                                    smart caching.</p>
-                            </div>
-
-                            <div class="metric-card">
-                                <div class="metric-stat" style="color: #818cf8;">Plane Sync <span
-                                        style="font-size: 0.9rem; font-weight: normal; color: var(--text-secondary);">Tool</span>
+                    <div class="project-split-layout">
+                        <!-- Left Column: Story, Metrics & Stack -->
+                        <div class="project-info-col">
+                            <div class="project-header-bar-split">
+                                <div class="project-branding">
+                                    <img src="assets/n-compass logo.jpg" alt="N-Compass TV Logo"
+                                        class="project-logo-thumb">
+                                    <div class="project-header-titles">
+                                        <h3 class="project-title">B2B Lead Intelligence &amp; Internal Tooling</h3>
+                                        <div class="project-role-tag">N-Compass TV &bull; Role: Software Engineer Intern
+                                            (Commercial)</div>
+                                    </div>
                                 </div>
-                                <div class="metric-title">LLM Ticket Drafting</div>
-                                <p class="metric-desc">Developed Plane Sync, an internal dev productivity tool with LLM
-                                    ticket drafting via Gemini Flash to accelerate sprint planning and issue
-                                    documentation.</p>
+                                <span class="project-badge-pill badge-enterprise">
+                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg>
+                                    Commercial Production
+                                </span>
                             </div>
 
-                            <div class="metric-card">
-                                <div class="metric-stat" style="color: #38bdf8;">&lt;500ms <span
-                                        style="font-size: 0.9rem; font-weight: normal; color: var(--text-secondary);">SLA</span>
+                            <p class="project-summary-lead">
+                                Commercial software engineering project delivering automated data acquisition pipelines
+                                and developer productivity tooling for enterprise sales operations. Engineered backend
+                                REST services with FastAPI, integrated Supabase PostgreSQL with AWS S3, and powered
+                                real-time workflow tooling.
+                            </p>
+
+                            <!-- Key Metrics Compact Row -->
+                            <div class="metrics-grid-compact">
+                                <div class="metric-card-compact accent-emerald">
+                                    <div class="metric-stat-compact stat-emerald">~50% Cut</div>
+                                    <div class="metric-title-compact">Async Scraping</div>
+                                    <p class="metric-desc-compact">Bright Data &amp; SerpApi pipelines with smart
+                                        caching.</p>
                                 </div>
-                                <div class="metric-title">Automated API Integration Suites</div>
-                                <p class="metric-desc">Authored comprehensive automated Postman API integration test
-                                    suites enforcing strict &lt;500ms response time validations across all core REST
-                                    endpoints.</p>
+
+                                <div class="metric-card-compact">
+                                    <div class="metric-stat-compact stat-indigo">Plane Sync</div>
+                                    <div class="metric-title-compact">LLM Drafting</div>
+                                    <p class="metric-desc-compact">Gemini Flash integration accelerating sprint
+                                        documentation.</p>
+                                </div>
+
+                                <div class="metric-card-compact accent-cyan">
+                                    <div class="metric-stat-compact stat-cyan">&lt;500ms</div>
+                                    <div class="metric-title-compact">API Latency SLA</div>
+                                    <p class="metric-desc-compact">Automated Postman suites validating endpoint
+                                        thresholds.</p>
+                                </div>
+                            </div>
+
+                            <!-- Tech Stack Bar -->
+                            <div class="project-tech-bar">
+                                <span class="tech-bar-label">Stack:</span>
+                                <span class="tech-pill">Python</span>
+                                <span class="tech-pill">FastAPI</span>
+                                <span class="tech-pill">Angular</span>
+                                <span class="tech-pill">Supabase</span>
+                                <span class="tech-pill">AWS S3</span>
+                                <span class="tech-pill">Gemini Flash</span>
+                                <span class="tech-pill">Postman</span>
+                            </div>
+
+                            <div class="proprietary-banner-compact">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                </svg>
+                                <p><strong>Proprietary Architecture:</strong> Source code protected under NDA.
+                                    Production backend orchestrating async web extraction, cloud databases, and LLM
+                                    automation.</p>
                             </div>
                         </div>
 
-                        <div class="proprietary-banner">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <line x1="12" y1="16" x2="12" y2="12"></line>
-                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                            </svg>
-                            <p><strong>Proprietary Commercial Architecture:</strong> Source code is protected under
-                                commercial NDA. Demonstrates enterprise engineering across asynchronous data extraction,
-                                prompt engineering with Gemini Flash, and cloud database orchestration.</p>
+                        <!-- Right Column: Framed Viewport with Architecture & Media Switcher -->
+                        <div class="project-media-col">
+                            <div class="project-frame" id="frame-ncompass">
+                                <div class="frame-header">
+                                    <div class="frame-dots">
+                                        <span class="frame-dot red"></span>
+                                        <span class="frame-dot yellow"></span>
+                                        <span class="frame-dot green"></span>
+                                    </div>
+                                    <div class="frame-tabs">
+                                        <button type="button" class="frame-tab ncompass-tab active"
+                                            data-ncompass-view="arch"
+                                            data-caption="Pipeline Architecture — Distributed Extraction &amp; LLM Sync">Architecture</button>
+                                        <button type="button" class="frame-tab ncompass-tab" data-ncompass-view="logo"
+                                            data-caption="N-Compass TV — Enterprise Media Network Partner">Company &amp;
+                                            Stack</button>
+                                    </div>
+                                </div>
+                                <div class="frame-viewport frame-modal-trigger modal-image" id="ncompass-viewport"
+                                    data-src="assets/n-compass logo.jpg"
+                                    data-alt="N-Compass TV Enterprise Architecture">
+                                    <div class="frame-ambient-bg" id="ncompass-ambient"></div>
+                                    <!-- View 1: Architecture Schematic -->
+                                    <div class="frame-arch-view" id="ncompass-arch-view">
+                                        <div class="arch-flow-diagram">
+                                            <div class="arch-node-row">
+                                                <div class="arch-node">
+                                                    <div class="arch-node-header">
+                                                        <span class="arch-node-title">1. Ingestion Engine</span>
+                                                        <span class="arch-node-tag"
+                                                            style="background: rgba(16, 185, 129, 0.2); color: #34d399;">Async</span>
+                                                    </div>
+                                                    <span class="arch-node-detail">Bright Data &bull; SerpApi
+                                                        Multi-Target</span>
+                                                </div>
+                                                <div class="arch-node">
+                                                    <div class="arch-node-header">
+                                                        <span class="arch-node-title">2. FastAPI Workers</span>
+                                                        <span class="arch-node-tag"
+                                                            style="background: rgba(79, 70, 229, 0.2); color: #a5b4fc;">Core</span>
+                                                    </div>
+                                                    <span class="arch-node-detail">Batch Processing &bull; ~50% Cost
+                                                        Cut</span>
+                                                </div>
+                                            </div>
+                                            <div class="arch-divider-arrow">&darr; &bull; &bull; &bull; &darr;</div>
+                                            <div class="arch-node-row">
+                                                <div class="arch-node">
+                                                    <div class="arch-node-header">
+                                                        <span class="arch-node-title">3. Cloud Storage</span>
+                                                        <span class="arch-node-tag"
+                                                            style="background: rgba(56, 189, 248, 0.2); color: #38bdf8;">Data</span>
+                                                    </div>
+                                                    <span class="arch-node-detail">Supabase PostgreSQL &bull; AWS
+                                                        S3</span>
+                                                </div>
+                                                <div class="arch-node">
+                                                    <div class="arch-node-header">
+                                                        <span class="arch-node-title">4. Plane Sync AI</span>
+                                                        <span class="arch-node-tag"
+                                                            style="background: rgba(245, 158, 11, 0.2); color: #fbbf24;">LLM</span>
+                                                    </div>
+                                                    <span class="arch-node-detail">Gemini Flash &bull; Auto Sprint
+                                                        Tickets</span>
+                                                </div>
+                                            </div>
+                                            <div class="arch-divider-arrow">&darr; &bull; &bull; &bull; &darr;</div>
+                                            <div class="arch-node">
+                                                <div class="arch-node-header">
+                                                    <span class="arch-node-title">5. Angular Internal Tooling</span>
+                                                    <span class="arch-node-tag"
+                                                        style="background: rgba(16, 185, 129, 0.2); color: #34d399;">&lt;500ms
+                                                        SLA</span>
+                                                </div>
+                                                <span class="arch-node-detail">Enterprise Sales Workflow &bull; Verified
+                                                    via Postman Automation</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- View 2: Logo image (initially hidden) -->
+                                    <img src="assets/n-compass logo.jpg" alt="N-Compass TV Logo"
+                                        class="frame-active-img" id="ncompass-logo-view"
+                                        style="display: none; object-position: center;">
+                                    <div class="frame-overlay-hint">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <polyline points="9 21 3 21 3 15"></polyline>
+                                            <line x1="21" y1="3" x2="14" y2="10"></line>
+                                            <line x1="3" y1="21" x2="10" y2="14"></line>
+                                        </svg>
+                                        Click to expand
+                                    </div>
+                                </div>
+                                <div class="frame-footer">
+                                    <span class="frame-caption-text" id="ncompass-caption">Pipeline Architecture —
+                                        Distributed Extraction &amp; LLM Sync</span>
+                                    <span class="frame-view-badge">Interactive System</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </article>
 
                 <!-- Project 2: SmartQuest — Gamified Learning Management System -->
                 <article class="project-card">
-                    <div class="project-header-bar">
-                        <div class="project-branding">
-                            <div class="brand-badge" style="background: linear-gradient(135deg, #4f46e5, #06b6d4);">SQ
-                            </div>
-                            <div class="project-header-titles">
-                                <h3 class="project-title">SmartQuest — Gamified Learning Management System</h3>
-                                <div class="project-role-tag">Role: Project Lead & Full-Stack Developer &bull; Capstone
-                                    Project</div>
-                            </div>
-                        </div>
-                        <span class="project-badge-pill badge-capstone">Capstone Project</span>
-                    </div>
-
-                    <div class="project-body">
-                        <p class="project-summary-lead">
-                            Cross-platform educational engine combining an interactive 2D RPG client built with Godot
-                            Engine and a robust web dashboard built with React, TypeScript, Node.js, and Express.
-                            Includes live student metrics tracking, interactive content generation, Firebase real-time
-                            sync, and payment gateway processing via PayMongo API.
-                        </p>
-
-                        <!-- Tech Stack Bar -->
-                        <div class="project-tech-bar">
-                            <span class="tech-bar-label">Stack:</span>
-                            <span class="tech-pill">Godot Engine</span>
-                            <span class="tech-pill">React</span>
-                            <span class="tech-pill">TypeScript</span>
-                            <span class="tech-pill">Node.js</span>
-                            <span class="tech-pill">Express</span>
-                            <span class="tech-pill">Firebase</span>
-                            <span class="tech-pill">PayMongo API</span>
-                        </div>
-
-                        <!-- Actions Bar -->
-                        <div class="project-actions">
-                            <a href="https://smartquest-uc.web.app/" target="_blank" rel="noopener noreferrer"
-                                class="btn btn-primary btn-sm">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                                Visit Live Web App
-                            </a>
-
-                            <button type="button" class="btn btn-secondary btn-sm demo-copy-btn"
-                                data-copy="official.harroldresma@gmail.com"
-                                aria-label="Copy email to request SmartQuest RPG client demo">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                                </svg>
-                                <span class="btn-text">Request RPG Client Demo</span>
-                            </button>
-                        </div>
-
-                        <!-- Gallery / Screenshots -->
-                        <div class="project-gallery-title">Application Screenshots (Click to expand)</div>
-                        <div class="gallery-grid gallery-grid-3">
-                            <div class="gallery-thumb-card modal-image" data-src="assets/smartquestWebDashboard.png"
-                                data-alt="SmartQuest Web Dashboard">
-                                <img src="assets/smartquestWebDashboard.png" alt="SmartQuest Web Dashboard"
-                                    class="gallery-thumb-img" loading="lazy">
-                                <div class="gallery-caption">
-                                    <span>Web Analytics Dashboard</span>
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <circle cx="11" cy="11" r="8"></circle>
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                        <line x1="11" y1="8" x2="11" y2="14"></line>
-                                        <line x1="8" y1="11" x2="14" y2="11"></line>
-                                    </svg>
+                    <div class="project-split-layout">
+                        <!-- Left Column -->
+                        <div class="project-info-col">
+                            <div class="project-header-bar-split">
+                                <div class="project-branding">
+                                    <div class="brand-badge"
+                                        style="background: linear-gradient(135deg, #4f46e5, #06b6d4);">SQ</div>
+                                    <div class="project-header-titles">
+                                        <h3 class="project-title">SmartQuest — Gamified LMS</h3>
+                                        <div class="project-role-tag">Role: Project Lead &amp; Full-Stack Developer
+                                            &bull; Capstone</div>
+                                    </div>
                                 </div>
+                                <span class="project-badge-pill badge-capstone">Capstone Project</span>
                             </div>
 
-                            <div class="gallery-thumb-card modal-image" data-src="assets/smartquestAppGame.jpg"
-                                data-alt="SmartQuest 2D RPG Gameplay">
-                                <img src="assets/smartquestAppGame.jpg" alt="SmartQuest 2D RPG Gameplay"
-                                    class="gallery-thumb-img" loading="lazy">
-                                <div class="gallery-caption">
-                                    <span>2D RPG Godot Game Engine</span>
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <circle cx="11" cy="11" r="8"></circle>
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                        <line x1="11" y1="8" x2="11" y2="14"></line>
-                                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                            <p class="project-summary-lead">
+                                Educational RPG engine combining a 2D Godot RPG client with a responsive React/Node.js
+                                web dashboard. Integrates real-time student telemetry with Firebase, interactive quest
+                                generation, and PayMongo automated payment checkout.
+                            </p>
+
+                            <!-- Tech Stack Bar -->
+                            <div class="project-tech-bar">
+                                <span class="tech-bar-label">Stack:</span>
+                                <span class="tech-pill">Godot 2D</span>
+                                <span class="tech-pill">React</span>
+                                <span class="tech-pill">TypeScript</span>
+                                <span class="tech-pill">Node.js</span>
+                                <span class="tech-pill">Express</span>
+                                <span class="tech-pill">Firebase</span>
+                                <span class="tech-pill">PayMongo API</span>
+                            </div>
+
+                            <!-- Actions Bar -->
+                            <div class="project-actions">
+                                <a href="https://smartquest-uc.web.app/" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-primary btn-sm">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
                                     </svg>
+                                    Visit Live Web App
+                                </a>
+
+                                <button type="button" class="btn btn-secondary btn-sm demo-copy-btn"
+                                    data-copy="official.harroldresma@gmail.com"
+                                    aria-label="Copy email to request SmartQuest RPG client demo">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                    <span class="btn-text">Request RPG Client Demo</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Framed Viewport with In-Place Tabbed Switcher -->
+                        <div class="project-media-col">
+                            <div class="project-frame">
+                                <div class="frame-header">
+                                    <div class="frame-dots">
+                                        <span class="frame-dot red"></span>
+                                        <span class="frame-dot yellow"></span>
+                                        <span class="frame-dot green"></span>
+                                    </div>
+                                    <div class="frame-tabs">
+                                        <button type="button" class="frame-tab active"
+                                            data-target-src="assets/smartquestWebDashboard.png"
+                                            data-target-alt="SmartQuest Web Dashboard"
+                                            data-target-caption="Student Telemetry &amp; Analytics Dashboard"
+                                            data-target-fit="cover" data-target-pos="top left"
+                                            data-target-scale="1">Dashboard</button>
+                                        <button type="button" class="frame-tab"
+                                            data-target-src="assets/smartquestAppGame.jpg"
+                                            data-target-alt="SmartQuest 2D RPG Gameplay"
+                                            data-target-caption="Godot 2D RPG Educational Gameplay"
+                                            data-target-fit="contain" data-target-pos="center" data-target-scale="1">RPG
+                                            Client</button>
+                                        <button type="button" class="frame-tab"
+                                            data-target-src="assets/smartquestWebPaymentMethod.png"
+                                            data-target-alt="SmartQuest PayMongo Gateway Integration"
+                                            data-target-caption="PayMongo Checkout &amp; Webhook Billing"
+                                            data-target-fit="cover" data-target-pos="top left"
+                                            data-target-scale="1">PayMongo</button>
+                                        <button type="button" class="frame-tab"
+                                            data-target-src="assets/smartquestAppModuleContent.jpg"
+                                            data-target-alt="SmartQuest Quest Module"
+                                            data-target-caption="Interactive Quest Curriculum Engine"
+                                            data-target-fit="contain" data-target-pos="center"
+                                            data-target-scale="1">Quest Engine</button>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="gallery-thumb-card modal-image" data-src="assets/smartquestWebPaymentMethod.png"
-                                data-alt="SmartQuest PayMongo Gateway Integration">
-                                <img src="assets/smartquestWebPaymentMethod.png"
-                                    alt="SmartQuest PayMongo Gateway Integration" class="gallery-thumb-img"
-                                    loading="lazy">
-                                <div class="gallery-caption">
-                                    <span>PayMongo API Billing Integration</span>
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <circle cx="11" cy="11" r="8"></circle>
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                        <line x1="11" y1="8" x2="11" y2="14"></line>
-                                        <line x1="8" y1="11" x2="14" y2="11"></line>
-                                    </svg>
+                                <div class="frame-viewport frame-modal-trigger modal-image"
+                                    data-src="assets/smartquestWebDashboard.png" data-alt="SmartQuest Web Dashboard">
+                                    <div class="frame-ambient-bg"></div>
+                                    <img src="assets/smartquestWebDashboard.png" alt="SmartQuest Web Dashboard"
+                                        class="frame-active-img" style="object-fit: cover; object-position: top left;"
+                                        loading="lazy">
+                                    <div class="frame-overlay-hint">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <polyline points="9 21 3 21 3 15"></polyline>
+                                            <line x1="21" y1="3" x2="14" y2="10"></line>
+                                            <line x1="3" y1="21" x2="10" y2="14"></line>
+                                        </svg>
+                                        Click to expand
+                                    </div>
+                                </div>
+                                <div class="frame-footer">
+                                    <span class="frame-caption-text">Student Telemetry &amp; Analytics Dashboard</span>
+                                    <span class="frame-view-badge">Interactive Preview</span>
                                 </div>
                             </div>
                         </div>
@@ -641,98 +747,105 @@
 
                 <!-- Project 3: BookTrack — Library Management System -->
                 <article class="project-card">
-                    <div class="project-header-bar">
-                        <div class="project-branding">
-                            <div class="brand-badge" style="background: linear-gradient(135deg, #2563eb, #38bdf8);">BT
-                            </div>
-                            <div class="project-header-titles">
-                                <h3 class="project-title">BookTrack — Library Management System</h3>
-                                <div class="project-role-tag">Role: Full-Stack Developer &bull; Web Application</div>
-                            </div>
-                        </div>
-                        <span class="project-badge-pill badge-webapp">Full-Stack Web App</span>
-                    </div>
-
-                    <div class="project-body">
-                        <p class="project-summary-lead">
-                            Role-based library management and book reservation web application with complete CRUD
-                            transaction tracking, admin analytics dashboards, and relational MySQL database management.
-                            Built using PHP 8.2 with Laravel MVC architecture, Blade templating, and Bootstrap 5.
-                        </p>
-
-                        <!-- Tech Stack Bar -->
-                        <div class="project-tech-bar">
-                            <span class="tech-bar-label">Stack:</span>
-                            <span class="tech-pill">PHP 8.2</span>
-                            <span class="tech-pill">Laravel</span>
-                            <span class="tech-pill">Blade</span>
-                            <span class="tech-pill">MySQL</span>
-                            <span class="tech-pill">Bootstrap 5</span>
-                            <span class="tech-pill">Composer</span>
-                        </div>
-
-                        <!-- Actions Bar -->
-                        <div class="project-actions">
-                            <button type="button" class="btn btn-secondary btn-sm demo-copy-btn"
-                                data-copy="official.harroldresma@gmail.com"
-                                aria-label="Copy email to request BookTrack demo">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                                </svg>
-                                <span class="btn-text">Request System Demo</span>
-                            </button>
-                        </div>
-
-                        <!-- Gallery / Screenshots -->
-                        <div class="project-gallery-title">Application Screenshots (Click to expand)</div>
-                        <div class="gallery-grid gallery-grid-3">
-                            <div class="gallery-thumb-card modal-image" data-src="assets/booktrackWebDashboard.png"
-                                data-alt="BookTrack Admin Dashboard">
-                                <img src="assets/booktrackWebDashboard.png" alt="BookTrack Admin Dashboard"
-                                    class="gallery-thumb-img" loading="lazy">
-                                <div class="gallery-caption">
-                                    <span>Multi-Role Admin Dashboard</span>
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <circle cx="11" cy="11" r="8"></circle>
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                        <line x1="11" y1="8" x2="11" y2="14"></line>
-                                        <line x1="8" y1="11" x2="14" y2="11"></line>
-                                    </svg>
+                    <div class="project-split-layout">
+                        <!-- Left Column -->
+                        <div class="project-info-col">
+                            <div class="project-header-bar-split">
+                                <div class="project-branding">
+                                    <div class="brand-badge"
+                                        style="background: linear-gradient(135deg, #2563eb, #38bdf8);">BT</div>
+                                    <div class="project-header-titles">
+                                        <h3 class="project-title">BookTrack — Library Management System</h3>
+                                        <div class="project-role-tag">Role: Full-Stack Developer &bull; Web Application
+                                        </div>
+                                    </div>
                                 </div>
+                                <span class="project-badge-pill badge-webapp">Full-Stack Web App</span>
                             </div>
 
-                            <div class="gallery-thumb-card modal-image" data-src="assets/booktrackWebBookDetails.png"
-                                data-alt="BookTrack Catalog & Book Details">
-                                <img src="assets/booktrackWebBookDetails.png" alt="BookTrack Catalog & Book Details"
-                                    class="gallery-thumb-img" loading="lazy">
-                                <div class="gallery-caption">
-                                    <span>Catalog & Availability Tracking</span>
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <circle cx="11" cy="11" r="8"></circle>
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                        <line x1="11" y1="8" x2="11" y2="14"></line>
-                                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                            <p class="project-summary-lead">
+                                Role-based library management and book reservation web application with complete CRUD
+                                transaction tracking, admin analytics dashboards, and relational MySQL database
+                                management. Built using PHP 8.2 with Laravel MVC architecture, Blade templating, and
+                                Bootstrap 5.
+                            </p>
+
+                            <!-- Tech Stack Bar -->
+                            <div class="project-tech-bar">
+                                <span class="tech-bar-label">Stack:</span>
+                                <span class="tech-pill">PHP 8.2</span>
+                                <span class="tech-pill">Laravel MVC</span>
+                                <span class="tech-pill">Blade</span>
+                                <span class="tech-pill">MySQL</span>
+                                <span class="tech-pill">Bootstrap 5</span>
+                                <span class="tech-pill">Composer</span>
+                            </div>
+
+                            <!-- Actions Bar -->
+                            <div class="project-actions">
+                                <button type="button" class="btn btn-secondary btn-sm demo-copy-btn"
+                                    data-copy="official.harroldresma@gmail.com"
+                                    aria-label="Copy email to request BookTrack demo">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                                     </svg>
+                                    <span class="btn-text">Request System Demo</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Framed Viewport with In-Place Tabbed Switcher -->
+                        <div class="project-media-col">
+                            <div class="project-frame">
+                                <div class="frame-header">
+                                    <div class="frame-dots">
+                                        <span class="frame-dot red"></span>
+                                        <span class="frame-dot yellow"></span>
+                                        <span class="frame-dot green"></span>
+                                    </div>
+                                    <div class="frame-tabs">
+                                        <button type="button" class="frame-tab active"
+                                            data-target-src="assets/booktrackWebDashboard.png"
+                                            data-target-alt="BookTrack Admin Dashboard"
+                                            data-target-caption="Admin Dashboard — Circulation Analytics"
+                                            data-target-fit="cover" data-target-pos="center"
+                                            data-target-scale="1">Dashboard</button>
+                                        <button type="button" class="frame-tab"
+                                            data-target-src="assets/booktrackWebBookDetails.png"
+                                            data-target-alt="BookTrack Catalog &amp; Book Details"
+                                            data-target-caption="Book Catalog — Inventory &amp; Metadata"
+                                            data-target-fit="cover" data-target-pos="center" data-target-scale="1">Book
+                                            Catalog</button>
+                                        <button type="button" class="frame-tab"
+                                            data-target-src="assets/booktrackWebRequest.png"
+                                            data-target-alt="BookTrack Borrowing Request Management"
+                                            data-target-caption="Borrow Requests — Workflows &amp; Fines"
+                                            data-target-fit="cover" data-target-pos="center"
+                                            data-target-scale="1">Borrow Requests</button>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="gallery-thumb-card modal-image" data-src="assets/booktrackWebRequest.png"
-                                data-alt="BookTrack Borrowing Request Management">
-                                <img src="assets/booktrackWebRequest.png" alt="BookTrack Borrowing Request Management"
-                                    class="gallery-thumb-img" loading="lazy">
-                                <div class="gallery-caption">
-                                    <span>Borrowing & Return Workflows</span>
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <circle cx="11" cy="11" r="8"></circle>
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                        <line x1="11" y1="8" x2="11" y2="14"></line>
-                                        <line x1="8" y1="11" x2="14" y2="11"></line>
-                                    </svg>
+                                <div class="frame-viewport frame-modal-trigger modal-image"
+                                    data-src="assets/booktrackWebDashboard.png" data-alt="BookTrack Admin Dashboard">
+                                    <div class="frame-ambient-bg"></div>
+                                    <img src="assets/booktrackWebDashboard.png" alt="BookTrack Admin Dashboard"
+                                        class="frame-active-img" style="object-fit: cover; object-position: top left;"
+                                        loading="lazy">
+                                    <div class="frame-overlay-hint">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <polyline points="9 21 3 21 3 15"></polyline>
+                                            <line x1="21" y1="3" x2="14" y2="10"></line>
+                                            <line x1="3" y1="21" x2="10" y2="14"></line>
+                                        </svg>
+                                        Click to expand
+                                    </div>
+                                </div>
+                                <div class="frame-footer">
+                                    <span class="frame-caption-text">Admin Dashboard — Circulation Analytics</span>
+                                    <span class="frame-view-badge">Interactive Preview</span>
                                 </div>
                             </div>
                         </div>
@@ -741,104 +854,109 @@
 
                 <!-- Project 4: FridgeWatch — IoT Smart Refrigerator Monitor -->
                 <article class="project-card">
-                    <div class="project-header-bar">
-                        <div class="project-branding">
-                            <div class="brand-badge" style="background: linear-gradient(135deg, #06b6d4, #10b981);">FW
-                            </div>
-                            <div class="project-header-titles">
-                                <h3 class="project-title">FridgeWatch — IoT Smart Refrigerator Monitor</h3>
-                                <div class="project-role-tag">Role: Mobile App Developer &amp; Team Lead &bull; IoT
-                                    System</div>
-                            </div>
-                        </div>
-                        <span class="project-badge-pill badge-iot">IoT &amp; Mobile System</span>
-                    </div>
-
-                    <div class="project-body">
-                        <p class="project-summary-lead">
-                            Internet of Things (IoT) solution designed to prevent food spoilage, reduce electricity
-                            waste, and prolong appliance lifespan by monitoring refrigerator door states. An ESP32
-                            microcontroller paired with a magnetic reed switch sensor detects open status beyond set
-                            thresholds, streaming telemetry over Wi-Fi to Firebase Realtime Database and Cloud
-                            Messaging, monitored via a native Android application.
-                        </p>
-
-                        <!-- Tech Stack Bar -->
-                        <div class="project-tech-bar">
-                            <span class="tech-bar-label">Stack:</span>
-                            <span class="tech-pill">Android Studio</span>
-                            <span class="tech-pill">Java</span>
-                            <span class="tech-pill">ESP32</span>
-                            <span class="tech-pill">Firebase Realtime DB</span>
-                            <span class="tech-pill">Firebase FCM</span>
-                            <span class="tech-pill">Wi-Fi (802.11 b/g/n)</span>
-                            <span class="tech-pill">IoT Sensors</span>
-                        </div>
-
-                        <!-- Actions Bar -->
-                        <div class="project-actions">
-                            <button type="button" class="btn btn-secondary btn-sm demo-copy-btn"
-                                data-copy="official.harroldresma@gmail.com"
-                                aria-label="Copy email to request FridgeWatch demo">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                                </svg>
-                                <span class="btn-text">Request Mobile App Demo</span>
-                            </button>
-                        </div>
-
-                        <!-- Gallery / Screenshots -->
-                        <div class="project-gallery-title">Application Screenshots (Click to expand)</div>
-                        <div class="gallery-grid gallery-grid-3">
-                            <div class="gallery-thumb-card modal-image" data-src="assets/fridgewatchAppLogin.jpg"
-                                data-alt="FridgeWatch Mobile Login Screen">
-                                <img src="assets/fridgewatchAppLogin.jpg" alt="FridgeWatch Mobile Login Screen"
-                                    class="gallery-thumb-img" loading="lazy">
-                                <div class="gallery-caption">
-                                    <span>Mobile Authentication</span>
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <circle cx="11" cy="11" r="8"></circle>
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                        <line x1="11" y1="8" x2="11" y2="14"></line>
-                                        <line x1="8" y1="11" x2="14" y2="11"></line>
-                                    </svg>
+                    <div class="project-split-layout">
+                        <!-- Left Column -->
+                        <div class="project-info-col">
+                            <div class="project-header-bar-split">
+                                <div class="project-branding">
+                                    <div class="brand-badge"
+                                        style="background: linear-gradient(135deg, #06b6d4, #10b981);">FW</div>
+                                    <div class="project-header-titles">
+                                        <h3 class="project-title">FridgeWatch — IoT Door Monitor</h3>
+                                        <div class="project-role-tag">Role: Mobile App Developer &amp; Team Lead &bull;
+                                            IoT System</div>
+                                    </div>
                                 </div>
+                                <span class="project-badge-pill badge-iot">IoT &amp; Mobile System</span>
                             </div>
 
-                            <div class="gallery-thumb-card modal-image" data-src="assets/fridgewatchAppDashboard.jpg"
-                                data-alt="FridgeWatch Real-Time Status &amp; Telemetry Dashboard">
-                                <img src="assets/fridgewatchAppDashboard.jpg"
-                                    alt="FridgeWatch Real-Time Status &amp; Telemetry Dashboard"
-                                    class="gallery-thumb-img" loading="lazy">
-                                <div class="gallery-caption">
-                                    <span>Door Status &amp; Telemetry</span>
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <circle cx="11" cy="11" r="8"></circle>
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                        <line x1="11" y1="8" x2="11" y2="14"></line>
-                                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                            <p class="project-summary-lead">
+                                Internet of Things (IoT) solution designed to prevent food spoilage, reduce electricity
+                                waste, and prolong appliance lifespan by monitoring refrigerator door states. An ESP32
+                                microcontroller paired with a magnetic reed switch sensor detects open status beyond set
+                                thresholds, streaming telemetry over Wi-Fi to Firebase Realtime Database and Cloud
+                                Messaging, monitored via a native Android application.
+                            </p>
+
+                            <!-- Tech Stack Bar -->
+                            <div class="project-tech-bar">
+                                <span class="tech-bar-label">Stack:</span>
+                                <span class="tech-pill">Android Studio</span>
+                                <span class="tech-pill">Java</span>
+                                <span class="tech-pill">ESP32</span>
+                                <span class="tech-pill">Firebase Realtime DB</span>
+                                <span class="tech-pill">Firebase FCM</span>
+                                <span class="tech-pill">Wi-Fi (802.11 b/g/n)</span>
+                            </div>
+
+                            <!-- Actions Bar -->
+                            <div class="project-actions">
+                                <button type="button" class="btn btn-secondary btn-sm demo-copy-btn"
+                                    data-copy="official.harroldresma@gmail.com"
+                                    aria-label="Copy email to request FridgeWatch demo">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                                     </svg>
+                                    <span class="btn-text">Request Mobile App Demo</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Framed Viewport with In-Place Tabbed Switcher -->
+                        <div class="project-media-col">
+                            <div class="project-frame">
+                                <div class="frame-header">
+                                    <div class="frame-dots">
+                                        <span class="frame-dot red"></span>
+                                        <span class="frame-dot yellow"></span>
+                                        <span class="frame-dot green"></span>
+                                    </div>
+                                    <div class="frame-tabs">
+                                        <button type="button" class="frame-tab active"
+                                            data-target-src="assets/fridgewatchAppDashboard.jpg"
+                                            data-target-alt="FridgeWatch Telemetry Dashboard"
+                                            data-target-caption="Real-Time Telemetry — Door State Tracking"
+                                            data-target-fit="contain" data-target-pos="center"
+                                            data-target-scale="1">Door Telemetry</button>
+                                        <button type="button" class="frame-tab"
+                                            data-target-src="assets/fridgewatchAppNotification.jpg"
+                                            data-target-alt="FridgeWatch Push Alerts"
+                                            data-target-caption="Push Alerts — FCM Threshold Notifications"
+                                            data-target-fit="contain" data-target-pos="center"
+                                            data-target-scale="1">Push Alerts</button>
+                                        <button type="button" class="frame-tab"
+                                            data-target-src="assets/fridgewatchAppLogin.jpg"
+                                            data-target-alt="FridgeWatch Mobile Auth"
+                                            data-target-caption="Mobile Auth — Secure Device Pairing"
+                                            data-target-fit="contain" data-target-pos="center"
+                                            data-target-scale="1">Mobile Auth</button>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="gallery-thumb-card modal-image" data-src="assets/fridgewatchAppNotification.jpg"
-                                data-alt="FridgeWatch Push Alerts &amp; Event Logs">
-                                <img src="assets/fridgewatchAppNotification.jpg"
-                                    alt="FridgeWatch Push Alerts &amp; Event Logs" class="gallery-thumb-img"
-                                    loading="lazy">
-                                <div class="gallery-caption">
-                                    <span>Alerts &amp; Activity History</span>
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <circle cx="11" cy="11" r="8"></circle>
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                        <line x1="11" y1="8" x2="11" y2="14"></line>
-                                        <line x1="8" y1="11" x2="14" y2="11"></line>
-                                    </svg>
+                                <div class="frame-viewport frame-modal-trigger modal-image"
+                                    data-src="assets/fridgewatchAppDashboard.jpg"
+                                    data-alt="FridgeWatch Real-Time Status &amp; Telemetry Dashboard">
+                                    <div class="frame-ambient-bg active"
+                                        style="background-image: url('assets/fridgewatchAppDashboard.jpg');"></div>
+                                    <img src="assets/fridgewatchAppDashboard.jpg"
+                                        alt="FridgeWatch Real-Time Status &amp; Telemetry Dashboard"
+                                        class="frame-active-img phone-mockup"
+                                        style="object-fit: contain; object-position: center;" loading="lazy">
+                                    <div class="frame-overlay-hint">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <polyline points="9 21 3 21 3 15"></polyline>
+                                            <line x1="21" y1="3" x2="14" y2="10"></line>
+                                            <line x1="3" y1="21" x2="10" y2="14"></line>
+                                        </svg>
+                                        Click to expand
+                                    </div>
+                                </div>
+                                <div class="frame-footer">
+                                    <span class="frame-caption-text">Real-Time Telemetry — Door State Tracking</span>
+                                    <span class="frame-view-badge">Interactive Preview</span>
                                 </div>
                             </div>
                         </div>
@@ -852,7 +970,7 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Get In Touch</span>
+                <span class="section-tag">04 // Get In Touch</span>
                 <h2 class="section-title">Let's Connect</h2>
                 <p class="section-subtitle">
                     I am actively seeking Junior Software Engineer roles, backend engineering opportunities, or
@@ -945,11 +1063,12 @@
         </div>
     </footer>
 
-    <!-- Image Lightbox Modal -->
-    <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Image Preview">
+    <!-- Image & Architecture Lightbox Modal -->
+    <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Expanded Preview">
         <div class="modal-dialog">
             <button class="modal-close" id="modalClose" aria-label="Close modal preview">&times;</button>
             <img class="modal-content" id="modalImage" alt="Expanded image preview">
+            <div class="modal-custom-content" id="modalCustomContent" style="display: none;"></div>
             <div class="modal-caption" id="modalCaption"></div>
         </div>
     </div>
@@ -1092,19 +1211,157 @@
             });
         });
 
-        // 5. Lightbox Modal Functionality
+        // 5. Lightbox Modal Functionality (Supports both High-Res Images & Custom Interactive Schematics)
         const modal = document.getElementById('imageModal');
         const modalImg = document.getElementById('modalImage');
         const modalCaption = document.getElementById('modalCaption');
         const modalClose = document.getElementById('modalClose');
+        const modalCustomContent = document.getElementById('modalCustomContent');
 
-        function openModal(src, alt) {
-            if (!modal || !modalImg) return;
+        const ncompassExpandedArchHtml = `
+            <div class="modal-arch-container">
+                <div class="modal-arch-header">
+                    <div class="modal-arch-badge">
+                        <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #10b981; box-shadow: 0 0 8px #10b981;"></span>
+                        <span>ENTERPRISE BACKEND ARCHITECTURE // COMMERCIAL SYSTEM</span>
+                    </div>
+                    <h3 class="modal-arch-title">B2B Lead Intelligence &amp; Internal Tooling Engine</h3>
+                    <p class="modal-arch-sub">Production high-throughput asynchronous web extraction, cloud database streaming, and LLM automation pipeline developed for N-Compass TV.</p>
+                </div>
+
+                <div class="modal-arch-grid">
+                    <div class="modal-arch-card">
+                        <div class="modal-arch-card-header">
+                            <span class="modal-arch-step">01</span>
+                            <span class="modal-arch-tag tag-async">Async Layer</span>
+                        </div>
+                        <h4 class="modal-arch-card-title">Distributed Extraction Engine</h4>
+                        <p class="modal-arch-card-desc">High-concurrency scraping orchestrator utilizing Bright Data rotating residential proxies and SerpApi multi-target endpoints with intelligent retry logic and rate-limit backoff.</p>
+                        <div class="modal-arch-chips">
+                            <span>Bright Data</span>
+                            <span>SerpApi</span>
+                            <span>AsyncIO</span>
+                            <span>Rotating Proxies</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-arch-flow-indicator">&rarr;</div>
+
+                    <div class="modal-arch-card">
+                        <div class="modal-arch-card-header">
+                            <span class="modal-arch-step">02</span>
+                            <span class="modal-arch-tag tag-core">Core Processing</span>
+                        </div>
+                        <h4 class="modal-arch-card-title">FastAPI Worker Cluster</h4>
+                        <p class="modal-arch-card-desc">Asynchronous REST microservices handling real-time payload sanitization, batch deduplication, and schema validation. Reduced external scraping costs by ~50% via smart in-memory caching.</p>
+                        <div class="modal-arch-chips">
+                            <span>FastAPI</span>
+                            <span>Pydantic v2</span>
+                            <span>Python 3.11</span>
+                            <span>~50% Cost Cut</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-arch-flow-indicator">&rarr;</div>
+
+                    <div class="modal-arch-card">
+                        <div class="modal-arch-card-header">
+                            <span class="modal-arch-step">03</span>
+                            <span class="modal-arch-tag tag-data">Storage &amp; DB</span>
+                        </div>
+                        <h4 class="modal-arch-card-title">Supabase PostgreSQL &amp; AWS S3</h4>
+                        <p class="modal-arch-card-desc">Normalized relational storage with Row Level Security (RLS), real-time change subscriptions for sales leads, and AWS S3 raw snapshot bucket archival.</p>
+                        <div class="modal-arch-chips">
+                            <span>Supabase PostgreSQL</span>
+                            <span>AWS S3</span>
+                            <span>Connection Pooler</span>
+                            <span>RLS</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-arch-flow-indicator">&rarr;</div>
+
+                    <div class="modal-arch-card">
+                        <div class="modal-arch-card-header">
+                            <span class="modal-arch-step">04</span>
+                            <span class="modal-arch-tag tag-llm">LLM Automation</span>
+                        </div>
+                        <h4 class="modal-arch-card-title">Plane Sync AI (Gemini Flash)</h4>
+                        <p class="modal-arch-card-desc">Automated sprint ticket generator and data synthesis agent powered by Google Gemini 1.5 Flash, generating actionable task summaries and syncing with internal tracking.</p>
+                        <div class="modal-arch-chips">
+                            <span>Gemini Flash API</span>
+                            <span>Plane Workspace</span>
+                            <span>Automated Sprints</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-arch-bottom">
+                    <div class="modal-arch-bottom-col">
+                        <div class="modal-arch-card-header">
+                            <span class="modal-arch-step">05</span>
+                            <span class="modal-arch-tag tag-frontend">Presentation Layer</span>
+                        </div>
+                        <h4 class="modal-arch-card-title">Angular Internal Operations Tooling</h4>
+                        <p class="modal-arch-card-desc">Single-page enterprise operations dashboard providing internal sales agents with real-time lead feeds, filters, search, and export workflows with sub-500ms API response SLAs.</p>
+                        <div class="modal-arch-chips">
+                            <span>Angular</span>
+                            <span>TypeScript</span>
+                            <span>RxJS State</span>
+                            <span>&lt;500ms SLA</span>
+                        </div>
+                    </div>
+                    <div class="modal-arch-bottom-col">
+                        <div class="modal-arch-card-header">
+                            <span class="modal-arch-step">06</span>
+                            <span class="modal-arch-tag tag-qa">Reliability &amp; QA</span>
+                        </div>
+                        <h4 class="modal-arch-card-title">Postman Automation &amp; Regression Testing</h4>
+                        <p class="modal-arch-card-desc">Comprehensive Newman CLI automated test collections validating endpoint status codes, response time SLA thresholds, and payload contracts across all microservice deployments.</p>
+                        <div class="modal-arch-chips">
+                            <span>Postman Collections</span>
+                            <span>Newman CLI</span>
+                            <span>Contract Testing</span>
+                            <span>CI/CD Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-arch-footer-note">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    <span>Proprietary Commercial Architecture developed during Software Engineer Internship at N-Compass TV. Source code protected under NDA.</span>
+                </div>
+            </div>
+        `;
+
+        function openModal(src, alt, customHtml = null) {
+            if (!modal) return;
             modal.style.display = 'flex';
             modal.setAttribute('aria-hidden', 'false');
-            modalImg.src = src;
-            modalCaption.textContent = alt || '';
             document.body.style.overflow = 'hidden';
+
+            if (customHtml) {
+                if (modalImg) modalImg.style.display = 'none';
+                if (modalCustomContent) {
+                    modalCustomContent.innerHTML = customHtml;
+                    modalCustomContent.style.display = 'block';
+                }
+                if (modalCaption) modalCaption.textContent = alt || '';
+            } else {
+                if (modalCustomContent) {
+                    modalCustomContent.innerHTML = '';
+                    modalCustomContent.style.display = 'none';
+                }
+                if (modalImg) {
+                    modalImg.style.display = 'block';
+                    modalImg.src = src;
+                }
+                if (modalCaption) modalCaption.textContent = alt || '';
+            }
         }
 
         function closeModal() {
@@ -1112,10 +1369,25 @@
             modal.style.display = 'none';
             modal.setAttribute('aria-hidden', 'true');
             document.body.style.overflow = '';
+            if (modalCustomContent) {
+                modalCustomContent.innerHTML = '';
+                modalCustomContent.style.display = 'none';
+            }
+            if (modalImg) {
+                modalImg.src = '';
+                modalImg.style.display = 'block';
+            }
         }
 
         document.querySelectorAll('.modal-image').forEach(item => {
             item.addEventListener('click', function () {
+                if (this.id === 'ncompass-viewport') {
+                    const archActive = document.querySelector('.ncompass-tab[data-ncompass-view="arch"]')?.classList.contains('active');
+                    if (archActive) {
+                        openModal(null, 'Pipeline Architecture — Distributed scraping, Supabase DB & Gemini Flash LLM', ncompassExpandedArchHtml);
+                        return;
+                    }
+                }
                 const src = this.getAttribute('data-src') || (this.querySelector('img') && this.querySelector('img').src);
                 const alt = this.getAttribute('data-alt') || (this.querySelector('img') && this.querySelector('img').alt);
                 if (src) openModal(src, alt);
@@ -1134,6 +1406,107 @@
                 closeModal();
             }
         });
+
+        // 6. Interactive Project Screenshot / View Switcher
+        // Handles tab switching for SmartQuest, BookTrack, and FridgeWatch
+        document.querySelectorAll('.frame-tab:not(.ncompass-tab)').forEach(tab => {
+            tab.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                const parentFrame = this.closest('.project-frame');
+                if (!parentFrame) return;
+
+                parentFrame.querySelectorAll('.frame-tab:not(.ncompass-tab)').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+
+                const targetSrc = this.getAttribute('data-target-src');
+                const targetAlt = this.getAttribute('data-target-alt');
+                const targetCaption = this.getAttribute('data-target-caption');
+                const targetPos = this.getAttribute('data-target-pos') || 'top center';
+                const targetFit = this.getAttribute('data-target-fit') || 'cover';
+                const targetScale = this.getAttribute('data-target-scale') || '1';
+
+                const mainImg = parentFrame.querySelector('.frame-active-img');
+                const modalTrigger = parentFrame.querySelector('.frame-modal-trigger');
+                const captionEl = parentFrame.querySelector('.frame-caption-text');
+                const ambientBg = parentFrame.querySelector('.frame-ambient-bg');
+
+                if (mainImg && targetSrc) {
+                    mainImg.style.opacity = '0.2';
+                    setTimeout(() => {
+                        mainImg.src = targetSrc;
+                        mainImg.alt = targetAlt || '';
+                        mainImg.style.objectPosition = targetPos;
+                        mainImg.style.transform = `scale(${targetScale})`;
+
+                        if (targetFit === 'contain') {
+                            mainImg.style.objectFit = 'contain';
+                            mainImg.classList.add('phone-mockup');
+                            if (ambientBg) {
+                                ambientBg.style.backgroundImage = `url('${targetSrc}')`;
+                                ambientBg.classList.add('active');
+                            }
+                        } else {
+                            mainImg.style.objectFit = 'cover';
+                            mainImg.classList.remove('phone-mockup');
+                            if (ambientBg) {
+                                ambientBg.classList.remove('active');
+                            }
+                        }
+
+                        if (modalTrigger) {
+                            modalTrigger.setAttribute('data-src', targetSrc);
+                            modalTrigger.setAttribute('data-alt', targetAlt || '');
+                        }
+                        if (captionEl && targetCaption) {
+                            captionEl.textContent = targetCaption;
+                        }
+                        mainImg.style.opacity = '1';
+                    }, 140);
+                }
+            });
+        });
+
+        // Handles tab switching for N-Compass TV (Architecture Diagram vs. Brand Logo)
+        const ncompassTabs = document.querySelectorAll('.ncompass-tab');
+        const ncompassArchView = document.getElementById('ncompass-arch-view');
+        const ncompassLogoView = document.getElementById('ncompass-logo-view');
+        const ncompassCaption = document.getElementById('ncompass-caption');
+        const ncompassViewport = document.getElementById('ncompass-viewport');
+
+        if (ncompassTabs.length && ncompassArchView && ncompassLogoView) {
+            ncompassTabs.forEach(tab => {
+                tab.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    ncompassTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const view = this.getAttribute('data-ncompass-view');
+                    const caption = this.getAttribute('data-caption');
+
+                    if (view === 'arch') {
+                        ncompassLogoView.style.display = 'none';
+                        ncompassArchView.style.display = 'flex';
+                        if (ncompassViewport) {
+                            ncompassViewport.setAttribute('data-src', 'assets/n-compass logo.jpg');
+                            ncompassViewport.setAttribute('data-alt', 'N-Compass TV Enterprise Architecture');
+                        }
+                    } else if (view === 'logo') {
+                        ncompassArchView.style.display = 'none';
+                        ncompassLogoView.style.display = 'block';
+                        if (ncompassViewport) {
+                            ncompassViewport.setAttribute('data-src', 'assets/n-compass logo.jpg');
+                            ncompassViewport.setAttribute('data-alt', 'N-Compass TV — Enterprise digital billboard & media network partner');
+                        }
+                    }
+
+                    if (ncompassCaption && caption) {
+                        ncompassCaption.textContent = caption;
+                    }
+                });
+            });
+        }
     </script>
 </body>
 
