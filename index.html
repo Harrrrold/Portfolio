@@ -1,29 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harrold Resma - Portfolio</title>
+    <title>Harrold Resma | Junior Software Engineer</title>
+    <meta name="description"
+        content="Portfolio of Harrold Resma - Junior Software Engineer specializing in resilient REST APIs, modern web frontends, and automated data pipelines. BS IT graduate from University of Cebu.">
+    <meta name="author" content="Harrold Resma">
+    <meta property="og:title" content="Harrold Resma | Junior Software Engineer">
+    <meta property="og:description"
+        content="Building resilient REST APIs, modern web frontends, and automated data pipelines.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/Img/favicon.svg">
+
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/global.css">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
         <div class="container">
-            <div class="nav-brand">
-                <h2>HR</h2>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <a href="#home" class="nav-brand" aria-label="Harrold Resma Home">
+                <div class="brand-badge">HR</div>
+                <div class="brand-name">Harrold Resma</div>
+                <div class="brand-status">
+                    <span class="status-dot"></span>
+                    Available for hire
+                </div>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <a href="assets/Resume/Harrold_Resma_Resume.pdf" download="Harrold_Resma_Resume.pdf" class="nav-cta">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+                        </svg>
+                        Resume
+                    </a>
+                </li>
             </ul>
-            <div class="hamburger">
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -31,44 +69,96 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-image">
-                    <img src="assets/Harrold Profile Transparent.png" alt="Harrold Resma" class="profile-picture">
-                </div>
                 <div class="hero-text">
+                    <div class="role-pill">
+                        <span class="role-pill-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </span>
+                        Full-Stack &amp; API Development
+                    </div>
+
                     <h1 class="hero-title">
                         Hi, I'm <span class="highlight">Harrold Resma</span>
                     </h1>
-                    <p class="hero-subtitle">Information Technology Student & Aspiring Developer</p>
+
+                    <div class="hero-subtitle-role">Junior Software Engineer</div>
+
                     <p class="hero-description">
-                        Currently pursuing a Bachelor of Science in Information Technology at University of Cebu - Banilad Campus. 
-                        Passionate about building innovative solutions and learning new technologies.
+                        Building resilient REST APIs, modern web frontends, and automated data pipelines. BS Information
+                        Technology graduate from the University of Cebu.
                     </p>
+
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                        <a href="CV/Harrold-Resma_CV.pdf" download="Harrold-Resma_CV.pdf" class="btn btn-cv">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
-                                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                        <a href="#projects" class="btn btn-primary" id="hero-view-projects">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                             </svg>
-                            Download CV
+                            View Projects
+                        </a>
+
+                        <a href="assets/Resume/Harrold_Resma_Resume.pdf" download="Harrold_Resma_Resume.pdf"
+                            class="btn btn-secondary" id="hero-download-resume">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download Resume
                         </a>
                     </div>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/harrold-resma-5a1842332" target="_blank" class="social-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+
+                    <div class="hero-socials">
+                        <span class="social-label">Connect:</span>
+                        <a href="https://www.linkedin.com/in/harrold-resma-5a1842332" target="_blank"
+                            rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                             </svg>
                         </a>
-                        <a href="https://github.com/Harrrrold" target="_blank" class="social-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        <a href="https://github.com/Harrrrold" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="GitHub Profile">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                             </svg>
                         </a>
-                        <a href="#contact" class="social-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        <a href="#contact" class="social-link" aria-label="Email Contact">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
                             </svg>
                         </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-backdrop"></div>
+                        <div class="avatar-ring"></div>
+                        <img src="assets/Img/Harrold Profile Transparent.png" alt="Harrold Resma - Junior Software Engineer"
+                            class="profile-picture">
+                        <div class="avatar-floating-card">
+                            <span class="floating-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <div>
+                                <div class="floating-text-primary">Commercial Experience</div>
+                                <div class="floating-text-secondary">FastAPI &bull; Angular &bull; Supabase</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,69 +168,153 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="info-grid">
-                        <div class="info-item">
-                            <span class="info-label">Email</span>
-                            <span class="info-value">official.harroldresma@gmail.com</span>
+            <div class="section-header">
+                <span class="section-tag">01 // Background</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">
+                    Engineering scalable backend architectures, clean API interfaces, and resilient web experiences.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-story">
+                    <h3>Engineering Mindset & Background</h3>
+                    <p>
+                        I am a <strong>Junior Software Engineer</strong> and a <strong>BS Information Technology
+                            graduate from the University of Cebu - Banilad Campus</strong>.
+                        My journey bridges commercial software engineering and full-stack system development.
+                    </p>
+                    <p>
+                        During my software engineering internship at <strong>N-Compass TV</strong>, I engineered
+                        automated web data pipelines using Python, FastAPI, and async workers, directly optimizing
+                        infrastructure costs and cutting third-party scraping expenses by approximately 50%. I have
+                        hands-on experience designing robust relational databases with PostgreSQL/Supabase, integrating
+                        LLM productivity tooling (Gemini Flash), and enforcing strict integration test suites with
+                        Postman.
+                    </p>
+                    <p>
+                        I focus on writing clean, maintainable code, architecting reliable RESTful interfaces, and
+                        building responsive client applications with TypeScript, React, and Angular.
+                    </p>
+
+                    <div class="about-highlights">
+                        <div class="about-highlight-item">
+                            <span class="highlight-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <div>
+                                <div class="highlight-title">Production Backend & APIs</div>
+                                <div class="highlight-desc">FastAPI, Express.js, Laravel, REST contracts</div>
+                            </div>
                         </div>
-                        <div class="info-item">
-                            <span class="info-label">Phone</span>
-                            <span class="info-value">09212642398</span>
+
+                        <div class="about-highlight-item">
+                            <span class="highlight-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <div>
+                                <div class="highlight-title">Automated Data Pipelines</div>
+                                <div class="highlight-desc">Async scraping, SerpApi, Bright Data, ETL</div>
+                            </div>
                         </div>
-                        <div class="info-item">
-                            <span class="info-label">Location</span>
-                            <span class="info-value">Mandaue City, Cebu, Philippines</span>
+
+                        <div class="about-highlight-item">
+                            <span class="highlight-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <div>
+                                <div class="highlight-title">Modern Web Frontends</div>
+                                <div class="highlight-desc">TypeScript, React, Angular, responsive UI</div>
+                            </div>
                         </div>
-                        <div class="info-item">
-                            <span class="info-label">Education</span>
-                            <span class="info-value">BS in Information Technology<br>University of Cebu - Banilad Campus (2022 - Current)</span>
+
+                        <div class="about-highlight-item">
+                            <span class="highlight-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <div>
+                                <div class="highlight-title">Database Design & Cloud</div>
+                                <div class="highlight-desc">PostgreSQL, Supabase, MySQL, AWS S3</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="skills-section">
-                        <h3>Skills</h3>
-                        <div class="skills-grid">
-                            <div class="skill-category">
-                                <h4>Programming Languages</h4>
-                                <div class="skill-tags">
-                                    <span class="skill-tag">Python</span>
-                                    <span class="skill-tag">Java</span>
-                                    <span class="skill-tag">JavaScript</span>
-                                    <span class="skill-tag">TypeScript</span>
-                                    <span class="skill-tag">C#</span>
-                                    <span class="skill-tag">C</span>
-                                </div>
+                </div>
+
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                        </div>
+                        <div class="info-card-meta">
+                            <div class="info-card-label">Education & Degree</div>
+                            <div class="info-card-value">BS in Information Technology</div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">University of
+                                Cebu - Banilad Campus (Graduate)</div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                        <div class="info-card-meta">
+                            <div class="info-card-label">Recent Commercial Experience</div>
+                            <div class="info-card-value">Software Engineer Intern</div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">N-Compass TV
+                                (Lead Intelligence & Internal Tooling)</div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="info-card-meta">
+                            <div class="info-card-label">Location</div>
+                            <div class="info-card-value">Mandaue City, Cebu, Philippines</div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">Open to remote &
+                                on-site software engineering roles</div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="info-card-meta">
+                            <div class="info-card-label">Direct Contact</div>
+                            <div class="info-card-value" style="font-size: 0.9rem;">official.harroldresma@gmail.com
                             </div>
-                            <div class="skill-category">
-                                <h4>Web Development</h4>
-                                <div class="skill-tags">
-                                    <span class="skill-tag">HTML</span>
-                                    <span class="skill-tag">CSS</span>
-                                    <span class="skill-tag">React</span>
-                                </div>
-                            </div>
-                            <div class="skill-category">
-                                <h4>Mobile & App Development</h4>
-                                <div class="skill-tags">
-                                    <span class="skill-tag">Android Studio</span>
-                                    <span class="skill-tag">Firebase</span>
-                                </div>
-                            </div>
-                            <div class="skill-category">
-                                <h4>Databases</h4>
-                                <div class="skill-tags">
-                                    <span class="skill-tag">MySQL</span>
-                                    <span class="skill-tag">MongoDB</span>
-                                </div>
-                            </div>
-                            <div class="skill-category">
-                                <h4>Tools & Others</h4>
-                                <div class="skill-tags">
-                                    <span class="skill-tag">Git</span>
-                                    <span class="skill-tag">Microsoft Office</span>
-                                </div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">+63 921 264 2398
                             </div>
                         </div>
                     </div>
@@ -149,420 +323,648 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Categorized Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02 // Tech Stack</span>
+                <h2 class="section-title">Categorized Skills</h2>
+                <p class="section-subtitle">
+                    Modern tooling and technologies utilized across backend services, frontend frameworks, and cloud
+                    data systems.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- 1. Languages & Frameworks -->
+                <div class="skill-category-card">
+                    <div class="skill-card-header">
+                        <div class="skill-icon-wrapper">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="skill-card-title">Languages & Frameworks</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-badge"><span class="badge-dot"></span>Python</span>
+                        <span class="skill-badge"><span class="badge-dot"></span>FastAPI</span>
+                        <span class="skill-badge"><span class="badge-dot"></span>TypeScript</span>
+                        <span class="skill-badge"><span class="badge-dot"></span>JavaScript</span>
+                        <span class="skill-badge"><span class="badge-dot"></span>Angular</span>
+                        <span class="skill-badge"><span class="badge-dot"></span>React</span>
+                        <span class="skill-badge"><span class="badge-dot"></span>Node.js</span>
+                        <span class="skill-badge"><span class="badge-dot"></span>C#</span>
+                        <span class="skill-badge"><span class="badge-dot"></span>Laravel</span>
+                        <span class="skill-badge"><span class="badge-dot"></span>SQL</span>
+                        <span class="skill-badge"><span class="badge-dot"></span>HTML5</span>
+                        <span class="skill-badge"><span class="badge-dot"></span>CSS3</span>
+                    </div>
+                </div>
+
+                <!-- 2. Databases & Infrastructure -->
+                <div class="skill-category-card">
+                    <div class="skill-card-header">
+                        <div class="skill-icon-wrapper">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="skill-card-title">Databases & Infrastructure</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-badge"><span class="badge-dot" style="background: #3b82f6;"></span>PostgreSQL
+                            (Supabase)</span>
+                        <span class="skill-badge"><span class="badge-dot"
+                                style="background: #3b82f6;"></span>MySQL</span>
+                        <span class="skill-badge"><span class="badge-dot"
+                                style="background: #3b82f6;"></span>MongoDB</span>
+                        <span class="skill-badge"><span class="badge-dot" style="background: #3b82f6;"></span>AWS
+                            S3</span>
+                        <span class="skill-badge"><span class="badge-dot"
+                                style="background: #3b82f6;"></span>Docker</span>
+                        <span class="skill-badge"><span class="badge-dot" style="background: #3b82f6;"></span>Git</span>
+                        <span class="skill-badge"><span class="badge-dot"
+                                style="background: #3b82f6;"></span>GitHub</span>
+                    </div>
+                </div>
+
+                <!-- 3. Testing & Developer Tools -->
+                <div class="skill-category-card">
+                    <div class="skill-card-header">
+                        <div class="skill-icon-wrapper">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="skill-card-title">Testing & Developer Tools</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-badge"><span class="badge-dot" style="background: #10b981;"></span>Postman
+                            (Automated API Testing)</span>
+                        <span class="skill-badge"><span class="badge-dot" style="background: #10b981;"></span>Swagger /
+                            OpenAPI</span>
+                        <span class="skill-badge"><span class="badge-dot"
+                                style="background: #10b981;"></span>Streamlit</span>
+                        <span class="skill-badge"><span class="badge-dot" style="background: #10b981;"></span>Bright
+                            Data</span>
+                        <span class="skill-badge"><span class="badge-dot"
+                                style="background: #10b981;"></span>SerpApi</span>
+                        <span class="skill-badge"><span class="badge-dot"
+                                style="background: #10b981;"></span>Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (4 Core Systems) -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
-            
-            <!-- SmartQuest Project -->
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-title-section">
-                        <h3 class="project-title">SmartQuest</h3>
-                        <p class="project-subtitle">A Mathematical Gamified Learning Management System For Grade 4 Pupils</p>
-                        <span class="project-badge">Capstone Project</span>
-                    </div>
-                </div>
-                
-                <div class="project-content">
-                    <div class="project-description">
-                        <h4>What is SmartQuest?</h4>
-                        <p>
-                            SmartQuest is a gamified learning management system (LMS) designed specifically for Grade 4 pupils in Cebu City. 
-                            It is a supplementary educational platform that combines mathematics education with interactive gameplay elements.
-                        </p>
-                        
-                        <h4>Problem Statement</h4>
-                        <ul>
-                            <li><strong>Low Math Proficiency:</strong> Students struggle with mathematical concepts and need additional support</li>
-                            <li><strong>Parental Challenges:</strong> Parents often lack the time, confidence, or familiarity with modern teaching strategies ("new math") to effectively help their children with homework</li>
-                        </ul>
-                        
-                        <h4>Project Goal</h4>
-                        <p>
-                            The overarching goal is to design and develop a gamified learning platform that serves as a supplementary practice tool 
-                            to improve mathematical proficiency and motivation among Grade 4 pupils.
-                        </p>
-                        
-                        <div class="project-role">
-                            <strong>Role:</strong> Project Manager
-                        </div>
-                        <div class="project-period">
-                            <strong>Duration:</strong> 2024 - 2025
-                        </div>
-                        
-                        <div class="project-links">
-                            <a href="https://smartquest-uc.web.app/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
-                                    <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-                                </svg>
-                                Visit Web Application
-                            </a>
-                        </div>
-                        
-                        <div class="tech-stack-section">
-                            <h4>Technology Stack</h4>
-                            <div class="tech-stack-grid">
-                                <div class="tech-category">
-                                    <h5>Game Engine</h5>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag">Godot Engine</span>
-                                    </div>
-                                </div>
-                                <div class="tech-category">
-                                    <h5>Android Development</h5>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag">GDScript</span>
-                                    </div>
-                                </div>
-                                <div class="tech-category">
-                                    <h5>Web Development</h5>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag">React.js</span>
-                                        <span class="tech-tag">TypeScript</span>
-                                        <span class="tech-tag">Material UI</span>
-                                    </div>
-                                </div>
-                                <div class="tech-category">
-                                    <h5>Cloud Services</h5>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag">Firebase Firestore</span>
-                                        <span class="tech-tag">Firebase Cloud</span>
-                                        <span class="tech-tag">Firebase Authentication</span>
-                                        <span class="tech-tag">Paymongo API</span>
-                                    </div>
-                                </div>
-                                <div class="tech-category">
-                                    <h5>Back End</h5>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag">Express.js</span>
-                                        <span class="tech-tag">Node.js</span>
-                                        <span class="tech-tag">RESTful API</span>
-                                    </div>
-                                </div>
-                                <div class="tech-category">
-                                    <h5>DevOps & Testing</h5>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag">Git / GitHub</span>
-                                        <span class="tech-tag">React Testing Library</span>
-                                        <span class="tech-tag">Godot Unit Testing</span>
-                                    </div>
-                                </div>
-                                <div class="tech-category">
-                                    <h5>Future Development</h5>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag">iOS Support</span>
-                                        <span class="tech-tag">Advanced Analytics</span>
-                                        <span class="tech-tag">Fine-tuning LLM Model</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-images">
-                        <h4>Mobile Application Screenshots</h4>
-                        <div class="app-demo-notice">
-                            <div class="demo-notice-content">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                </svg>
-                                <div class="demo-notice-text">
-                                    <strong>Interested in trying the mobile app?</strong>
-                                    <p>Contact me via email at <a href="mailto:official.harroldresma@gmail.com?subject=SmartQuest Mobile App Demo Request">official.harroldresma@gmail.com</a> to request a demo of the SmartQuest mobile application.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="image-grid mobile-grid">
-                            <div class="image-item">
-                                <img src="assets/smartquestAppLogin.jpg" alt="SmartQuest Mobile Login Screen" class="modal-image" data-src="assets/smartquestAppLogin.jpg" data-alt="SmartQuest Mobile Login Screen">
-                                <p class="image-caption">Login Screen</p>
-                            </div>
-                            <div class="image-item">
-                                <img src="assets/smartquestAppModuleContent.jpg" alt="SmartQuest Mobile Module Content" class="modal-image" data-src="assets/smartquestAppModuleContent.jpg" data-alt="SmartQuest Mobile Module Content">
-                                <p class="image-caption">Module Level & Content</p>
-                            </div>
-                            <div class="image-item">
-                                <img src="assets/smartquestAppGame.jpg" alt="SmartQuest Mobile Game" class="modal-image" data-src="assets/smartquestAppGame.jpg" data-alt="SmartQuest Mobile Game">
-                                <p class="image-caption">Gamified Learning Experience</p>
-                            </div>
-                        </div>
-                        
-                        <h4>Web Dashboard Screenshots</h4>
-                        <div class="image-grid web-grid">
-                            <div class="image-item">
-                                <img src="assets/smartquestWebDashboard.png" alt="SmartQuest Web Dashboard" class="modal-image" data-src="assets/smartquestWebDashboard.png" data-alt="SmartQuest Web Dashboard">
-                                <p class="image-caption">Dashboard Overview</p>
-                            </div>
-                            <div class="image-item">
-                                <img src="assets/smartquestWebProfile.png" alt="SmartQuest Web Profile" class="modal-image" data-src="assets/smartquestWebProfile.png" data-alt="SmartQuest Web Profile">
-                                <p class="image-caption">Module Creator Profile</p>
-                            </div>
-                            <div class="image-item">
-                                <img src="assets/smartquestWebPaymentMethod.png" alt="SmartQuest Web Payment Method" class="modal-image" data-src="assets/smartquestWebPaymentMethod.png" data-alt="SmartQuest Web Payment Method">
-                                <p class="image-caption">Payment Method Management</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="section-header">
+                <span class="section-tag">03 // Core Systems</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">
+                    Production systems showcasing commercial API pipelines, full-stack architectures, and robust web
+                    applications.
+                </p>
             </div>
-            
-            <!-- BookTrack Project -->
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-title-section">
-                        <h3 class="project-title">BookTrack</h3>
-                        <p class="project-subtitle">A Simple Web App For Searching, Reserving, And Managing Library Books</p>
-                        <span class="project-badge">Web Application</span>
-                    </div>
-                </div>
-                
-                <div class="project-content">
-                    <div class="project-description">
-                        <h4>Project Overview</h4>
-                        <p>
-                            BookTrack is a PHP-based web application that allows library members to register an account, search for books, 
-                            reserve available titles, and bookmark or mark favorite books for easy access later. Administrators can manage 
-                            the book catalog and member accounts through an easy-to-use interface. This system aims to simplify book borrowing 
-                            processes, ensure accurate tracking of book availability, and provide a user-friendly environment for both members and librarians.
-                        </p>
-                        
-                        <h4>Key Features</h4>
-                        <ul>
-                            <li><strong>User Management:</strong> User registration and login system for library members</li>
-                            <li><strong>Book Search:</strong> Search and filtering by title, availability, or category</li>
-                            <li><strong>Borrowing System:</strong> Complete borrowing, reserving, and return process tracking</li>
-                            <li><strong>Admin Dashboards:</strong> Separate dashboards for System Admin, Library Admin, and Library Moderator</li>
-                            <li><strong>Library Management:</strong> Creation, update, and moderator assignment for libraries</li>
-                            <li><strong>User Features:</strong> View due dates, borrowing history, and bookmark favorite books</li>
-                            <li><strong>Notifications:</strong> Alerts for borrowers about upcoming and overdue books</li>
-                            <li><strong>Activity Logging:</strong> Book status logging for admins and moderators</li>
-                        </ul>
-                        
-                        <h4>Project Scope</h4>
-                        <div class="scope-section">
-                            <div class="scope-in">
-                                <strong>In Scope:</strong>
-                                <ul>
-                                    <li>User registration and login system</li>
-                                    <li>Book search and filtering by title, availability, or category</li>
-                                    <li>Borrowing, reserving, and return process tracking</li>
-                                    <li>Dashboards for System Admin, Library Admin, and Library Moderator</li>
-                                    <li>Library management (creation, update, and moderator assignment)</li>
-                                    <li>View due dates and borrowing history for members</li>
-                                    <li>Bookmarking or liking books for quick access</li>
-                                    <li>Notifications for borrowers about upcoming and overdue books</li>
-                                    <li>Book status logging for admins and moderators</li>
-                                </ul>
+
+            <div class="projects-wrapper">
+                <!-- Project 1: B2B Lead Intelligence & Internal Tooling (N-Compass TV) -->
+                <article class="project-card featured-enterprise">
+                    <div class="project-split-layout">
+                        <!-- Left Column: Story, Metrics & Stack -->
+                        <div class="project-info-col">
+                            <div class="project-header-bar-split">
+                                <div class="project-branding">
+                                    <img src="assets/Img/n-compass logo.jpg" alt="N-Compass TV Logo"
+                                        class="project-logo-thumb">
+                                    <div class="project-header-titles">
+                                        <h3 class="project-title">B2B Lead Intelligence &amp; Internal Tooling</h3>
+                                        <div class="project-role-tag">N-Compass TV &bull; Role: Software Engineer Intern
+                                            (Commercial)</div>
+                                    </div>
+                                </div>
+                                <span class="project-badge-pill badge-enterprise">
+                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg>
+                                    Commercial Production
+                                </span>
                             </div>
-                            <div class="scope-out">
-                                <strong>Out of Scope:</strong>
-                                <ul>
-                                    <li>Digital reading of books (no full-text access)</li>
-                                    <li>Online payment processing</li>
-                                    <li>Inter-library loan functions</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="project-role">
-                            <strong>Role:</strong> Project Lead
-                        </div>
-                        
-                        <div class="tech-stack-section">
-                            <h4>Technology Stack</h4>
-                            <div class="tech-stack-grid">
-                                <div class="tech-category">
-                                    <h5>Framework</h5>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag">Laravel</span>
-                                    </div>
+
+                            <p class="project-summary-lead">
+                                Commercial software engineering project delivering automated data acquisition pipelines
+                                and developer productivity tooling for enterprise sales operations. Engineered backend
+                                REST services with FastAPI, integrated Supabase PostgreSQL with AWS S3, and powered
+                                real-time workflow tooling.
+                            </p>
+
+                            <!-- Key Metrics Compact Row -->
+                            <div class="metrics-grid-compact">
+                                <div class="metric-card-compact accent-emerald">
+                                    <div class="metric-stat-compact stat-emerald">~50% Cut</div>
+                                    <div class="metric-title-compact">Async Scraping</div>
+                                    <p class="metric-desc-compact">Bright Data &amp; SerpApi pipelines with smart
+                                        caching.</p>
                                 </div>
-                                <div class="tech-category">
-                                    <h5>Language</h5>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag">PHP 8.2+</span>
-                                    </div>
+
+                                <div class="metric-card-compact">
+                                    <div class="metric-stat-compact stat-indigo">Plane Sync</div>
+                                    <div class="metric-title-compact">LLM Drafting</div>
+                                    <p class="metric-desc-compact">Gemini Flash integration accelerating sprint
+                                        documentation.</p>
                                 </div>
-                                <div class="tech-category">
-                                    <h5>Frontend</h5>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag">Blade Templating Engine</span>
-                                        <span class="tech-tag">Bootstrap 5</span>
-                                    </div>
-                                </div>
-                                <div class="tech-category">
-                                    <h5>Database</h5>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag">MySQL</span>
-                                    </div>
-                                </div>
-                                <div class="tech-category">
-                                    <h5>Tools</h5>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag">Composer</span>
-                                        <span class="tech-tag">Apache</span>
-                                    </div>
+
+                                <div class="metric-card-compact accent-cyan">
+                                    <div class="metric-stat-compact stat-cyan">&lt;500ms</div>
+                                    <div class="metric-title-compact">API Latency SLA</div>
+                                    <p class="metric-desc-compact">Automated Postman suites validating endpoint
+                                        thresholds.</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-images">
-                        <h4>Web Application Screenshots</h4>
-                        <div class="app-demo-notice">
-                            <div class="demo-notice-content">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+
+                            <!-- Tech Stack Bar -->
+                            <div class="project-tech-bar">
+                                <span class="tech-bar-label">Stack:</span>
+                                <span class="tech-pill">Python</span>
+                                <span class="tech-pill">FastAPI</span>
+                                <span class="tech-pill">Angular</span>
+                                <span class="tech-pill">Supabase</span>
+                                <span class="tech-pill">AWS S3</span>
+                                <span class="tech-pill">Gemini Flash</span>
+                                <span class="tech-pill">Postman</span>
+                            </div>
+
+                            <div class="proprietary-banner-compact">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
                                 </svg>
-                                <div class="demo-notice-text">
-                                    <strong>Interested in trying BookTrack?</strong>
-                                    <p>Contact me via email at <a href="mailto:official.harroldresma@gmail.com?subject=BookTrack Demo Request">official.harroldresma@gmail.com</a> to request a demo of the BookTrack web application.</p>
-                                </div>
+                                <p><strong>Proprietary Architecture:</strong> Source code protected under NDA.
+                                    Production backend orchestrating async web extraction, cloud databases, and LLM
+                                    automation.</p>
                             </div>
                         </div>
-                        <div class="image-grid web-grid">
-                            <div class="image-item">
-                                <img src="assets/booktrackWebDashboard.png" alt="BookTrack Admin Dashboard" class="modal-image" data-src="assets/booktrackWebDashboard.png" data-alt="BookTrack Admin Dashboard">
-                                <p class="image-caption">Admin Dashboard</p>
-                            </div>
-                            <div class="image-item">
-                                <img src="assets/booktrackWebBookDetails.png" alt="BookTrack Book Details" class="modal-image" data-src="assets/booktrackWebBookDetails.png" data-alt="BookTrack Book Details">
-                                <p class="image-caption">Book Details Page</p>
-                            </div>
-                            <div class="image-item">
-                                <img src="assets/booktrackWebRequest.png" alt="BookTrack Request Management" class="modal-image" data-src="assets/booktrackWebRequest.png" data-alt="BookTrack Request Management">
-                                <p class="image-caption">Request Management Center</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- FridgeWatch Project -->
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-title-section">
-                        <h3 class="project-title">FridgeWatch</h3>
-                        <p class="project-subtitle">An Application That Detects If A Refrigerator Door Has Been Left Open For Too Long. Alerts And Status Are Stored In The Cloud And Viewable Through A Mobile App.</p>
-                        <span class="project-badge">IoT Project</span>
-                    </div>
-                </div>
-                
-                <div class="project-content">
-                    <div class="project-description">
-                        <h4>Project Overview</h4>
-                        <p>
-                            FridgeWatch is an Internet of Things (IoT) solution designed to monitor the status of a refrigerator door. 
-                            A common issue in households and businesses is leaving refrigerator doors unintentionally open, which leads to 
-                            food spoilage, increased electricity consumption, and reduced appliance lifespan. FridgeWatch addresses this problem 
-                            by using a magnetic reed switch sensor connected to an ESP32 microcontroller to detect whether the refrigerator door is open or closed.
-                        </p>
-                        <p>
-                            When the door remains open for longer than a predefined threshold, the system triggers an alert. This status is transmitted 
-                            via Wi-Fi to a cloud platform (Firebase), where the data is stored and made accessible through a dedicated mobile application. 
-                            The application provides real-time monitoring, status updates, and alerts, ensuring users are notified promptly and can take corrective action.
-                        </p>
-                        
-                        <h4>Key Features</h4>
-                        <ul>
-                            <li><strong>Real-time Monitoring:</strong> Continuous monitoring of refrigerator door status</li>
-                            <li><strong>Smart Alerts:</strong> Automatic notifications when door is left open beyond threshold</li>
-                            <li><strong>Cloud Storage:</strong> All status updates and activity logs stored in Firebase</li>
-                            <li><strong>Mobile App:</strong> Android application for viewing status and receiving notifications</li>
-                            <li><strong>Activity Logs:</strong> Historical tracking of door open/close events</li>
-                            <li><strong>Wi-Fi Connectivity:</strong> Seamless connection to local Wi-Fi network</li>
-                        </ul>
-                        
-                        <h4>Hardware Components</h4>
-                        <div class="hardware-table">
-                            <div class="hardware-item">
-                                <strong>Microcontroller:</strong> ESP32 (Dual-core, 2.4GHz Wi-Fi) - Data processing & Wi-Fi connection
-                            </div>
-                            <div class="hardware-item">
-                                <strong>Magnetic Reed Switch:</strong> GPS-30 - Detects presence or absence of magnetic field (Normally open/closed contacts, 10-30V operating range)
-                            </div>
-                            <div class="hardware-item">
-                                <strong>Power Supply:</strong> USB 2.0 Cable (5V/3A) - Provides stable power and programming interface
-                            </div>
-                            <div class="hardware-item">
-                                <strong>Prototyping:</strong> Breadboard (MB-102, 830 tie-points) and Jumper Wires (22 AWG) - For circuit prototyping
-                            </div>
-                        </div>
-                        
-                        <h4>Connectivity Specifications</h4>
-                        <ul>
-                            <li><strong>Protocol:</strong> Wi-Fi 802.11 b/g/n (ESP32 connects to local Wi-Fi network)</li>
-                            <li><strong>Cloud Service:</strong> Firebase Realtime Database</li>
-                            <li><strong>Mobile Access:</strong> Android application connected to Firebase SDK for data sync and notifications</li>
-                        </ul>
-                        
-                        <div class="project-role">
-                            <strong>Role:</strong> Mobile App Developer & Team Lead
-                        </div>
-                        
-                        <div class="tech-stack-section">
-                            <h4>Technology Stack</h4>
-                            <div class="tech-stack-grid">
-                                <div class="tech-category">
-                                    <h5>Mobile Development</h5>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag">Android Studio</span>
-                                        <span class="tech-tag">Java / Kotlin</span>
+
+                        <!-- Right Column: Framed Viewport with Architecture & Media Switcher -->
+                        <div class="project-media-col">
+                            <div class="project-frame" id="frame-ncompass">
+                                <div class="frame-header">
+                                    <div class="frame-dots">
+                                        <span class="frame-dot red"></span>
+                                        <span class="frame-dot yellow"></span>
+                                        <span class="frame-dot green"></span>
+                                    </div>
+                                    <div class="frame-tabs">
+                                        <button type="button" class="frame-tab ncompass-tab active"
+                                            data-ncompass-view="arch"
+                                            data-caption="Pipeline Architecture — Distributed Extraction &amp; LLM Sync">Architecture</button>
+                                        <button type="button" class="frame-tab ncompass-tab" data-ncompass-view="logo"
+                                            data-caption="N-Compass TV — Enterprise Media Network Partner">Company &amp;
+                                            Stack</button>
                                     </div>
                                 </div>
-                                <div class="tech-category">
-                                    <h5>Hardware</h5>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag">ESP32 Microcontroller</span>
-                                        <span class="tech-tag">Magnetic Reed Switch</span>
+                                <div class="frame-viewport frame-modal-trigger modal-image" id="ncompass-viewport"
+                                    data-src="assets/Img/n-compass logo.jpg"
+                                    data-alt="N-Compass TV Enterprise Architecture">
+                                    <div class="frame-ambient-bg" id="ncompass-ambient"></div>
+                                    <!-- View 1: Architecture Schematic -->
+                                    <div class="frame-arch-view" id="ncompass-arch-view">
+                                        <div class="arch-flow-diagram">
+                                            <div class="arch-node-row">
+                                                <div class="arch-node">
+                                                    <div class="arch-node-header">
+                                                        <span class="arch-node-title">1. Ingestion Engine</span>
+                                                        <span class="arch-node-tag"
+                                                            style="background: rgba(16, 185, 129, 0.2); color: #34d399;">Async</span>
+                                                    </div>
+                                                    <span class="arch-node-detail">Bright Data &bull; SerpApi
+                                                        Multi-Target</span>
+                                                </div>
+                                                <div class="arch-node">
+                                                    <div class="arch-node-header">
+                                                        <span class="arch-node-title">2. FastAPI Workers</span>
+                                                        <span class="arch-node-tag"
+                                                            style="background: rgba(79, 70, 229, 0.2); color: #a5b4fc;">Core</span>
+                                                    </div>
+                                                    <span class="arch-node-detail">Batch Processing &bull; ~50% Cost
+                                                        Cut</span>
+                                                </div>
+                                            </div>
+                                            <div class="arch-divider-arrow">&darr; &bull; &bull; &bull; &darr;</div>
+                                            <div class="arch-node-row">
+                                                <div class="arch-node">
+                                                    <div class="arch-node-header">
+                                                        <span class="arch-node-title">3. Cloud Storage</span>
+                                                        <span class="arch-node-tag"
+                                                            style="background: rgba(56, 189, 248, 0.2); color: #38bdf8;">Data</span>
+                                                    </div>
+                                                    <span class="arch-node-detail">Supabase PostgreSQL &bull; AWS
+                                                        S3</span>
+                                                </div>
+                                                <div class="arch-node">
+                                                    <div class="arch-node-header">
+                                                        <span class="arch-node-title">4. Plane Sync AI</span>
+                                                        <span class="arch-node-tag"
+                                                            style="background: rgba(245, 158, 11, 0.2); color: #fbbf24;">LLM</span>
+                                                    </div>
+                                                    <span class="arch-node-detail">Gemini Flash &bull; Auto Sprint
+                                                        Tickets</span>
+                                                </div>
+                                            </div>
+                                            <div class="arch-divider-arrow">&darr; &bull; &bull; &bull; &darr;</div>
+                                            <div class="arch-node">
+                                                <div class="arch-node-header">
+                                                    <span class="arch-node-title">5. Angular Internal Tooling</span>
+                                                    <span class="arch-node-tag"
+                                                        style="background: rgba(16, 185, 129, 0.2); color: #34d399;">&lt;500ms
+                                                        SLA</span>
+                                                </div>
+                                                <span class="arch-node-detail">Enterprise Sales Workflow &bull; Verified
+                                                    via Postman Automation</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- View 2: Logo image (initially hidden) -->
+                                    <img src="assets/Img/n-compass logo.jpg" alt="N-Compass TV Logo"
+                                        class="frame-active-img" id="ncompass-logo-view"
+                                        style="display: none; object-position: center;">
+                                    <div class="frame-overlay-hint">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <polyline points="9 21 3 21 3 15"></polyline>
+                                            <line x1="21" y1="3" x2="14" y2="10"></line>
+                                            <line x1="3" y1="21" x2="10" y2="14"></line>
+                                        </svg>
+                                        Click to expand
                                     </div>
                                 </div>
-                                <div class="tech-category">
-                                    <h5>Cloud Services</h5>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag">Firebase Realtime Database</span>
-                                    </div>
-                                </div>
-                                <div class="tech-category">
-                                    <h5>Connectivity</h5>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag">Wi-Fi 802.11 b/g/n</span>
-                                    </div>
+                                <div class="frame-footer">
+                                    <span class="frame-caption-text" id="ncompass-caption">Pipeline Architecture —
+                                        Distributed Extraction &amp; LLM Sync</span>
+                                    <span class="frame-view-badge">Interactive System</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="project-images">
-                        <h4>Mobile Application Screenshots</h4>
-                        <div class="app-demo-notice">
-                            <div class="demo-notice-content">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                </svg>
-                                <div class="demo-notice-text">
-                                    <strong>Interested in trying FridgeWatch?</strong>
-                                    <p>Contact me via email at <a href="mailto:official.harroldresma@gmail.com?subject=FridgeWatch Demo Request">official.harroldresma@gmail.com</a> to request a demo of the FridgeWatch mobile application.</p>
+                </article>
+
+                <!-- Project 2: SmartQuest — Gamified Learning Management System -->
+                <article class="project-card">
+                    <div class="project-split-layout">
+                        <!-- Left Column -->
+                        <div class="project-info-col">
+                            <div class="project-header-bar-split">
+                                <div class="project-branding">
+                                    <div class="brand-badge"
+                                        style="background: linear-gradient(135deg, #4f46e5, #06b6d4);">SQ</div>
+                                    <div class="project-header-titles">
+                                        <h3 class="project-title">SmartQuest — Gamified LMS</h3>
+                                        <div class="project-role-tag">Role: Project Lead &amp; Full-Stack Developer
+                                            &bull; Capstone</div>
+                                    </div>
+                                </div>
+                                <span class="project-badge-pill badge-capstone">Capstone Project</span>
+                            </div>
+
+                            <p class="project-summary-lead">
+                                Educational RPG engine combining a 2D Godot RPG client with a responsive React/Node.js
+                                web dashboard. Integrates real-time student telemetry with Firebase, interactive quest
+                                generation, and PayMongo automated payment checkout.
+                            </p>
+
+                            <!-- Tech Stack Bar -->
+                            <div class="project-tech-bar">
+                                <span class="tech-bar-label">Stack:</span>
+                                <span class="tech-pill">Godot 2D</span>
+                                <span class="tech-pill">React</span>
+                                <span class="tech-pill">TypeScript</span>
+                                <span class="tech-pill">Node.js</span>
+                                <span class="tech-pill">Express</span>
+                                <span class="tech-pill">Firebase</span>
+                                <span class="tech-pill">PayMongo API</span>
+                            </div>
+
+                            <!-- Actions Bar -->
+                            <div class="project-actions">
+                                <a href="https://smartquest-uc.web.app/" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-primary btn-sm">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Visit Live Web App
+                                </a>
+
+                                <button type="button" class="btn btn-secondary btn-sm demo-copy-btn"
+                                    data-copy="official.harroldresma@gmail.com"
+                                    aria-label="Copy email to request SmartQuest RPG client demo">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                    <span class="btn-text">Request RPG Client Demo</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Framed Viewport with In-Place Tabbed Switcher -->
+                        <div class="project-media-col">
+                            <div class="project-frame">
+                                <div class="frame-header">
+                                    <div class="frame-dots">
+                                        <span class="frame-dot red"></span>
+                                        <span class="frame-dot yellow"></span>
+                                        <span class="frame-dot green"></span>
+                                    </div>
+                                    <div class="frame-tabs">
+                                        <button type="button" class="frame-tab active"
+                                            data-target-src="assets/Img/smartquestWebDashboard.png"
+                                            data-target-alt="SmartQuest Web Dashboard"
+                                            data-target-caption="Student Telemetry &amp; Analytics Dashboard"
+                                            data-target-fit="cover" data-target-pos="top left"
+                                            data-target-scale="1">Dashboard</button>
+                                        <button type="button" class="frame-tab"
+                                            data-target-src="assets/Img/smartquestAppGame.jpg"
+                                            data-target-alt="SmartQuest 2D RPG Gameplay"
+                                            data-target-caption="Godot 2D RPG Educational Gameplay"
+                                            data-target-fit="contain" data-target-pos="center" data-target-scale="1">RPG
+                                            Client</button>
+                                        <button type="button" class="frame-tab"
+                                            data-target-src="assets/Img/smartquestWebPaymentMethod.png"
+                                            data-target-alt="SmartQuest PayMongo Gateway Integration"
+                                            data-target-caption="PayMongo Checkout &amp; Webhook Billing"
+                                            data-target-fit="cover" data-target-pos="top left"
+                                            data-target-scale="1">PayMongo</button>
+                                        <button type="button" class="frame-tab"
+                                            data-target-src="assets/Img/smartquestAppModuleContent.jpg"
+                                            data-target-alt="SmartQuest Quest Module"
+                                            data-target-caption="Interactive Quest Curriculum Engine"
+                                            data-target-fit="contain" data-target-pos="center"
+                                            data-target-scale="1">Quest Engine</button>
+                                    </div>
+                                </div>
+                                <div class="frame-viewport frame-modal-trigger modal-image"
+                                    data-src="assets/Img/smartquestWebDashboard.png" data-alt="SmartQuest Web Dashboard">
+                                    <div class="frame-ambient-bg"></div>
+                                    <img src="assets/Img/smartquestWebDashboard.png" alt="SmartQuest Web Dashboard"
+                                        class="frame-active-img" style="object-fit: cover; object-position: top left;"
+                                        loading="lazy">
+                                    <div class="frame-overlay-hint">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <polyline points="9 21 3 21 3 15"></polyline>
+                                            <line x1="21" y1="3" x2="14" y2="10"></line>
+                                            <line x1="3" y1="21" x2="10" y2="14"></line>
+                                        </svg>
+                                        Click to expand
+                                    </div>
+                                </div>
+                                <div class="frame-footer">
+                                    <span class="frame-caption-text">Student Telemetry &amp; Analytics Dashboard</span>
+                                    <span class="frame-view-badge">Interactive Preview</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="image-grid mobile-grid">
-                            <div class="image-item">
-                                <img src="assets/fridgewatchAppLogin.jpg" alt="FridgeWatch Mobile Login Screen" class="modal-image" data-src="assets/fridgewatchAppLogin.jpg" data-alt="FridgeWatch Mobile Login Screen">
-                                <p class="image-caption">Login Screen</p>
+                    </div>
+                </article>
+
+                <!-- Project 3: BookTrack — Library Management System -->
+                <article class="project-card">
+                    <div class="project-split-layout">
+                        <!-- Left Column -->
+                        <div class="project-info-col">
+                            <div class="project-header-bar-split">
+                                <div class="project-branding">
+                                    <div class="brand-badge"
+                                        style="background: linear-gradient(135deg, #2563eb, #38bdf8);">BT</div>
+                                    <div class="project-header-titles">
+                                        <h3 class="project-title">BookTrack — Library Management System</h3>
+                                        <div class="project-role-tag">Role: Full-Stack Developer &bull; Web Application
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="project-badge-pill badge-webapp">Full-Stack Web App</span>
                             </div>
-                            <div class="image-item">
-                                <img src="assets/fridgewatchAppDashboard.jpg" alt="FridgeWatch Mobile Dashboard" class="modal-image" data-src="assets/fridgewatchAppDashboard.jpg" data-alt="FridgeWatch Mobile Dashboard">
-                                <p class="image-caption">Dashboard & Door Status</p>
+
+                            <p class="project-summary-lead">
+                                Role-based library management and book reservation web application with complete CRUD
+                                transaction tracking, admin analytics dashboards, and relational MySQL database
+                                management. Built using PHP 8.2 with Laravel MVC architecture, Blade templating, and
+                                Bootstrap 5.
+                            </p>
+
+                            <!-- Tech Stack Bar -->
+                            <div class="project-tech-bar">
+                                <span class="tech-bar-label">Stack:</span>
+                                <span class="tech-pill">PHP 8.2</span>
+                                <span class="tech-pill">Laravel MVC</span>
+                                <span class="tech-pill">Blade</span>
+                                <span class="tech-pill">MySQL</span>
+                                <span class="tech-pill">Bootstrap 5</span>
+                                <span class="tech-pill">Composer</span>
                             </div>
-                            <div class="image-item">
-                                <img src="assets/fridgewatchAppNotification.jpg" alt="FridgeWatch Mobile Notifications" class="modal-image" data-src="assets/fridgewatchAppNotification.jpg" data-alt="FridgeWatch Mobile Notifications">
-                                <p class="image-caption">Activity Logs & Notifications</p>
+
+                            <!-- Actions Bar -->
+                            <div class="project-actions">
+                                <button type="button" class="btn btn-secondary btn-sm demo-copy-btn"
+                                    data-copy="official.harroldresma@gmail.com"
+                                    aria-label="Copy email to request BookTrack demo">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                    <span class="btn-text">Request System Demo</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Framed Viewport with In-Place Tabbed Switcher -->
+                        <div class="project-media-col">
+                            <div class="project-frame">
+                                <div class="frame-header">
+                                    <div class="frame-dots">
+                                        <span class="frame-dot red"></span>
+                                        <span class="frame-dot yellow"></span>
+                                        <span class="frame-dot green"></span>
+                                    </div>
+                                    <div class="frame-tabs">
+                                        <button type="button" class="frame-tab active"
+                                            data-target-src="assets/Img/booktrackWebDashboard.png"
+                                            data-target-alt="BookTrack Admin Dashboard"
+                                            data-target-caption="Admin Dashboard — Circulation Analytics"
+                                            data-target-fit="cover" data-target-pos="center"
+                                            data-target-scale="1">Dashboard</button>
+                                        <button type="button" class="frame-tab"
+                                            data-target-src="assets/Img/booktrackWebBookDetails.png"
+                                            data-target-alt="BookTrack Catalog &amp; Book Details"
+                                            data-target-caption="Book Catalog — Inventory &amp; Metadata"
+                                            data-target-fit="cover" data-target-pos="center" data-target-scale="1">Book
+                                            Catalog</button>
+                                        <button type="button" class="frame-tab"
+                                            data-target-src="assets/Img/booktrackWebRequest.png"
+                                            data-target-alt="BookTrack Borrowing Request Management"
+                                            data-target-caption="Borrow Requests — Workflows &amp; Fines"
+                                            data-target-fit="cover" data-target-pos="center"
+                                            data-target-scale="1">Borrow Requests</button>
+                                    </div>
+                                </div>
+                                <div class="frame-viewport frame-modal-trigger modal-image"
+                                    data-src="assets/Img/booktrackWebDashboard.png" data-alt="BookTrack Admin Dashboard">
+                                    <div class="frame-ambient-bg"></div>
+                                    <img src="assets/Img/booktrackWebDashboard.png" alt="BookTrack Admin Dashboard"
+                                        class="frame-active-img" style="object-fit: cover; object-position: center;"
+                                        loading="lazy">
+                                    <div class="frame-overlay-hint">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <polyline points="9 21 3 21 3 15"></polyline>
+                                            <line x1="21" y1="3" x2="14" y2="10"></line>
+                                            <line x1="3" y1="21" x2="10" y2="14"></line>
+                                        </svg>
+                                        Click to expand
+                                    </div>
+                                </div>
+                                <div class="frame-footer">
+                                    <span class="frame-caption-text">Admin Dashboard — Circulation Analytics</span>
+                                    <span class="frame-view-badge">Interactive Preview</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </article>
+
+                <!-- Project 4: FridgeWatch — IoT Smart Refrigerator Monitor -->
+                <article class="project-card">
+                    <div class="project-split-layout">
+                        <!-- Left Column -->
+                        <div class="project-info-col">
+                            <div class="project-header-bar-split">
+                                <div class="project-branding">
+                                    <div class="brand-badge"
+                                        style="background: linear-gradient(135deg, #06b6d4, #10b981);">FW</div>
+                                    <div class="project-header-titles">
+                                        <h3 class="project-title">FridgeWatch — IoT Door Monitor</h3>
+                                        <div class="project-role-tag">Role: Mobile App Developer &amp; Team Lead &bull;
+                                            IoT System</div>
+                                    </div>
+                                </div>
+                                <span class="project-badge-pill badge-iot">IoT &amp; Mobile System</span>
+                            </div>
+
+                            <p class="project-summary-lead">
+                                Internet of Things (IoT) solution designed to prevent food spoilage, reduce electricity
+                                waste, and prolong appliance lifespan by monitoring refrigerator door states. An ESP32
+                                microcontroller paired with a magnetic reed switch sensor detects open status beyond set
+                                thresholds, streaming telemetry over Wi-Fi to Firebase Realtime Database and Cloud
+                                Messaging, monitored via a native Android application.
+                            </p>
+
+                            <!-- Tech Stack Bar -->
+                            <div class="project-tech-bar">
+                                <span class="tech-bar-label">Stack:</span>
+                                <span class="tech-pill">Android Studio</span>
+                                <span class="tech-pill">Java</span>
+                                <span class="tech-pill">ESP32</span>
+                                <span class="tech-pill">Firebase Realtime DB</span>
+                                <span class="tech-pill">Firebase FCM</span>
+                                <span class="tech-pill">Wi-Fi (802.11 b/g/n)</span>
+                            </div>
+
+                            <!-- Actions Bar -->
+                            <div class="project-actions">
+                                <button type="button" class="btn btn-secondary btn-sm demo-copy-btn"
+                                    data-copy="official.harroldresma@gmail.com"
+                                    aria-label="Copy email to request FridgeWatch demo">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                    <span class="btn-text">Request Mobile App Demo</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Framed Viewport with In-Place Tabbed Switcher -->
+                        <div class="project-media-col">
+                            <div class="project-frame">
+                                <div class="frame-header">
+                                    <div class="frame-dots">
+                                        <span class="frame-dot red"></span>
+                                        <span class="frame-dot yellow"></span>
+                                        <span class="frame-dot green"></span>
+                                    </div>
+                                    <div class="frame-tabs">
+                                        <button type="button" class="frame-tab active"
+                                            data-target-src="assets/Img/fridgewatchAppDashboard.jpg"
+                                            data-target-alt="FridgeWatch Telemetry Dashboard"
+                                            data-target-caption="Real-Time Telemetry — Door State Tracking"
+                                            data-target-fit="contain" data-target-pos="center"
+                                            data-target-scale="1">Door Telemetry</button>
+                                        <button type="button" class="frame-tab"
+                                            data-target-src="assets/Img/fridgewatchAppNotification.jpg"
+                                            data-target-alt="FridgeWatch Push Alerts"
+                                            data-target-caption="Push Alerts — FCM Threshold Notifications"
+                                            data-target-fit="contain" data-target-pos="center"
+                                            data-target-scale="1">Push Alerts</button>
+                                        <button type="button" class="frame-tab"
+                                            data-target-src="assets/Img/fridgewatchAppLogin.jpg"
+                                            data-target-alt="FridgeWatch Mobile Auth"
+                                            data-target-caption="Mobile Auth — Secure Device Pairing"
+                                            data-target-fit="contain" data-target-pos="center"
+                                            data-target-scale="1">Mobile Auth</button>
+                                    </div>
+                                </div>
+                                <div class="frame-viewport frame-modal-trigger modal-image"
+                                    data-src="assets/Img/fridgewatchAppDashboard.jpg"
+                                    data-alt="FridgeWatch Real-Time Status &amp; Telemetry Dashboard">
+                                    <div class="frame-ambient-bg active"
+                                        style="background-image: url('assets/Img/fridgewatchAppDashboard.jpg');"></div>
+                                    <img src="assets/Img/fridgewatchAppDashboard.jpg"
+                                        alt="FridgeWatch Real-Time Status &amp; Telemetry Dashboard"
+                                        class="frame-active-img phone-mockup"
+                                        style="object-fit: contain; object-position: center;" loading="lazy">
+                                    <div class="frame-overlay-hint">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <polyline points="9 21 3 21 3 15"></polyline>
+                                            <line x1="21" y1="3" x2="14" y2="10"></line>
+                                            <line x1="3" y1="21" x2="10" y2="14"></line>
+                                        </svg>
+                                        Click to expand
+                                    </div>
+                                </div>
+                                <div class="frame-footer">
+                                    <span class="frame-caption-text">Real-Time Telemetry — Door State Tracking</span>
+                                    <span class="frame-view-badge">Interactive Preview</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -570,37 +972,83 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p class="contact-description">
-                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+            <div class="section-header">
+                <span class="section-tag">04 // Get In Touch</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">
+                    I am actively seeking Junior Software Engineer roles, backend engineering opportunities, or
+                    innovative full-stack projects.
                 </p>
-                <div class="contact-info">
-                    <a href="#" class="contact-item" id="email-contact" data-copy="official.harroldresma@gmail.com">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </div>
+
+            <div class="contact-cards-grid">
+                <!-- Email Card -->
+                <div class="contact-action-card" id="email-contact" data-copy="official.harroldresma@gmail.com"
+                    title="Click to copy email">
+                    <div class="contact-icon-box">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
                         </svg>
-                        <span id="email-text">official.harroldresma@gmail.com</span>
-                    </a>
-                    <a href="#" class="contact-item" id="phone-contact" data-copy="09212642398">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                        </svg>
-                        <span id="phone-text">09212642398</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/harrold-resma-5a1842332" target="_blank" class="contact-item">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
-                        <span>LinkedIn Profile</span>
-                    </a>
-                    <a href="https://github.com/Harrrrold" target="_blank" class="contact-item">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                        <span>GitHub Profile</span>
-                    </a>
+                    </div>
+                    <div class="contact-card-info">
+                        <div class="contact-card-title">Email Address</div>
+                        <div class="contact-card-value" id="email-text">official.harroldresma@gmail.com</div>
+                        <span class="contact-copy-pill" id="email-copy-pill">Click to copy</span>
+                    </div>
                 </div>
+
+                <!-- Phone Card -->
+                <div class="contact-action-card" id="phone-contact" data-copy="+639212642398"
+                    title="Click to copy phone number">
+                    <div class="contact-icon-box">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="contact-card-info">
+                        <div class="contact-card-title">Phone Number</div>
+                        <div class="contact-card-value" id="phone-text">09212642398 / (+63) 921 264 2398</div>
+                        <span class="contact-copy-pill" id="phone-copy-pill">Click to copy</span>
+                    </div>
+                </div>
+
+                <!-- LinkedIn Card -->
+                <a href="https://www.linkedin.com/in/harrold-resma-5a1842332" target="_blank" rel="noopener noreferrer"
+                    class="contact-action-card">
+                    <div class="contact-icon-box">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </div>
+                    <div class="contact-card-info">
+                        <div class="contact-card-title">LinkedIn Profile</div>
+                        <div class="contact-card-value">linkedin.com/in/harrold-resma-5a1842332</div>
+                        <span class="contact-copy-pill">View Profile &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- GitHub Card -->
+                <a href="https://github.com/Harrrrold" target="_blank" rel="noopener noreferrer"
+                    class="contact-action-card">
+                    <div class="contact-icon-box">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </div>
+                    <div class="contact-card-info">
+                        <div class="contact-card-title">GitHub Repositories</div>
+                        <div class="contact-card-value">github.com/Harrrrold</div>
+                        <span class="contact-copy-pill">View GitHub &rarr;</span>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -608,149 +1056,481 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Harrold Resma. All rights reserved.</p>
+            <p>&copy; 2026 Harrold Resma &bull; Junior Software Engineer. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Back to top &uarr;</a>
+                <a href="https://github.com/Harrrrold" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/harrold-resma-5a1842332" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+            </div>
         </div>
     </footer>
 
-    <!-- Image Modal -->
-    <div id="imageModal" class="modal">
-        <span class="modal-close">&times;</span>
-        <img class="modal-content" id="modalImage">
-        <div class="modal-caption" id="modalCaption"></div>
+    <!-- Image & Architecture Lightbox Modal -->
+    <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Expanded Preview">
+        <div class="modal-dialog">
+            <button class="modal-close" id="modalClose" aria-label="Close modal preview">&times;</button>
+            <img class="modal-content" id="modalImage" alt="Expanded image preview">
+            <div class="modal-custom-content" id="modalCustomContent" style="display: none;"></div>
+            <div class="modal-caption" id="modalCaption"></div>
+        </div>
     </div>
 
+    <!-- Interactive Script -->
     <script>
-        // Mobile menu toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
+        // 1. Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
 
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-
-        // Close menu when clicking on a link
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+                const isActive = hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+                hamburger.setAttribute('aria-expanded', isActive ? 'true' : 'false');
             });
-        });
 
-        // Smooth scrolling (excluding contact items with copy functionality)
+            // Close mobile menu on menu link click
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        // 2. Smooth Scroll for Anchor Links (excluding copy items)
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            if (!anchor.hasAttribute('data-copy')) {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId && targetId !== '#') {
+                    const targetEl = document.querySelector(targetId);
+                    if (targetEl) {
+                        e.preventDefault();
+                        targetEl.scrollIntoView({
                             behavior: 'smooth',
                             block: 'start'
                         });
                     }
-                });
-            }
+                }
+            });
         });
 
-        // Copy to clipboard functionality
-        function copyToClipboard(text, element, originalText) {
-            navigator.clipboard.writeText(text).then(() => {
-                // Visual feedback - temporarily change text
-                element.textContent = 'Copied!';
-                element.style.color = 'var(--secondary-color)';
-                
-                setTimeout(() => {
-                    element.textContent = originalText;
-                    element.style.color = '';
-                }, 2000);
-            }).catch(err => {
-                console.error('Failed to copy:', err);
-                // Fallback for older browsers
-                const textArea = document.createElement('textarea');
-                textArea.value = text;
-                textArea.style.position = 'fixed';
-                textArea.style.opacity = '0';
-                document.body.appendChild(textArea);
-                textArea.select();
-                try {
-                    document.execCommand('copy');
-                    element.textContent = 'Copied!';
-                    element.style.color = 'var(--secondary-color)';
-                    setTimeout(() => {
-                        element.textContent = originalText;
-                        element.style.color = '';
-                    }, 2000);
-                } catch (err) {
-                    console.error('Fallback copy failed:', err);
+        // 3. Active Nav Link on Scroll Spy
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function updateActiveNav() {
+            const scrollY = window.pageYOffset;
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 120;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        } else {
+                            link.classList.remove('active');
+                        }
+                    });
                 }
-                document.body.removeChild(textArea);
+            });
+        }
+        window.addEventListener('scroll', updateActiveNav);
+        updateActiveNav();
+
+        // 4. Copy-to-Clipboard with Feedback
+        function setupCopyItem(cardId, textId, pillId) {
+            const card = document.getElementById(cardId);
+            const pill = document.getElementById(pillId);
+            if (!card || !pill) return;
+
+            const copyVal = card.getAttribute('data-copy');
+            const originalPillText = pill.textContent;
+
+            card.addEventListener('click', () => {
+                navigator.clipboard.writeText(copyVal).then(() => {
+                    pill.textContent = 'Copied to clipboard!';
+                    pill.style.background = 'rgba(16, 185, 129, 0.2)';
+                    pill.style.borderColor = '#10b981';
+                    pill.style.color = '#34d399';
+
+                    setTimeout(() => {
+                        pill.textContent = originalPillText;
+                        pill.style.background = '';
+                        pill.style.borderColor = '';
+                        pill.style.color = '';
+                    }, 2200);
+                }).catch(() => {
+                    const textArea = document.createElement('textarea');
+                    textArea.value = copyVal;
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textArea);
+
+                    pill.textContent = 'Copied!';
+                    setTimeout(() => {
+                        pill.textContent = originalPillText;
+                    }, 2000);
+                });
             });
         }
 
-        // Email copy functionality
-        const emailContact = document.getElementById('email-contact');
-        const emailText = document.getElementById('email-text');
-        if (emailContact) {
-            emailContact.addEventListener('click', function(e) {
-                e.preventDefault();
-                const email = this.getAttribute('data-copy');
-                copyToClipboard(email, emailText, email);
-            });
-        }
+        setupCopyItem('email-contact', 'email-text', 'email-copy-pill');
+        setupCopyItem('phone-contact', 'phone-text', 'phone-copy-pill');
 
-        // Phone copy functionality
-        const phoneContact = document.getElementById('phone-contact');
-        const phoneText = document.getElementById('phone-text');
-        if (phoneContact) {
-            phoneContact.addEventListener('click', function(e) {
-                e.preventDefault();
-                const phone = this.getAttribute('data-copy');
-                copyToClipboard(phone, phoneText, phone);
-            });
-        }
+        // Setup Demo Request Copy Buttons
+        document.querySelectorAll('.demo-copy-btn').forEach(btn => {
+            const copyVal = btn.getAttribute('data-copy');
+            const textSpan = btn.querySelector('.btn-text');
+            const originalText = textSpan ? textSpan.textContent : btn.textContent;
 
-        // Image Modal functionality
+            btn.addEventListener('click', () => {
+                navigator.clipboard.writeText(copyVal).then(() => {
+                    btn.classList.add('copied');
+                    if (textSpan) textSpan.textContent = 'Email Copied! ✓';
+                    setTimeout(() => {
+                        btn.classList.remove('copied');
+                        if (textSpan) textSpan.textContent = originalText;
+                    }, 2500);
+                }).catch(() => {
+                    const textArea = document.createElement('textarea');
+                    textArea.value = copyVal;
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textArea);
+
+                    btn.classList.add('copied');
+                    if (textSpan) textSpan.textContent = 'Email Copied! ✓';
+                    setTimeout(() => {
+                        btn.classList.remove('copied');
+                        if (textSpan) textSpan.textContent = originalText;
+                    }, 2500);
+                });
+            });
+        });
+
+        // 5. Lightbox Modal Functionality (Supports both High-Res Images & Custom Interactive Schematics)
         const modal = document.getElementById('imageModal');
         const modalImg = document.getElementById('modalImage');
         const modalCaption = document.getElementById('modalCaption');
-        const modalClose = document.querySelector('.modal-close');
+        const modalClose = document.getElementById('modalClose');
+        const modalCustomContent = document.getElementById('modalCustomContent');
 
-        // Get all images with modal-image class
-        const modalImages = document.querySelectorAll('.modal-image');
+        const ncompassExpandedArchHtml = `
+            <div class="modal-arch-container">
+                <div class="modal-arch-header">
+                    <div class="modal-arch-badge">
+                        <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #10b981; box-shadow: 0 0 8px #10b981;"></span>
+                        <span>ENTERPRISE BACKEND ARCHITECTURE // COMMERCIAL SYSTEM</span>
+                    </div>
+                    <h3 class="modal-arch-title">B2B Lead Intelligence &amp; Internal Tooling Engine</h3>
+                    <p class="modal-arch-sub">Production high-throughput asynchronous web extraction, cloud database streaming, and LLM automation pipeline developed for N-Compass TV.</p>
+                </div>
 
-        modalImages.forEach(img => {
-            img.style.cursor = 'pointer';
-            img.addEventListener('click', function() {
-                modal.style.display = 'flex';
-                modalImg.src = this.getAttribute('data-src') || this.src;
-                modalCaption.textContent = this.getAttribute('data-alt') || this.alt;
-                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                <div class="modal-arch-grid">
+                    <div class="modal-arch-card">
+                        <div class="modal-arch-card-header">
+                            <span class="modal-arch-step">01</span>
+                            <span class="modal-arch-tag tag-async">Async Layer</span>
+                        </div>
+                        <h4 class="modal-arch-card-title">Distributed Extraction Engine</h4>
+                        <p class="modal-arch-card-desc">High-concurrency scraping orchestrator utilizing Bright Data rotating residential proxies and SerpApi multi-target endpoints with intelligent retry logic and rate-limit backoff.</p>
+                        <div class="modal-arch-chips">
+                            <span>Bright Data</span>
+                            <span>SerpApi</span>
+                            <span>AsyncIO</span>
+                            <span>Rotating Proxies</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-arch-flow-indicator">&rarr;</div>
+
+                    <div class="modal-arch-card">
+                        <div class="modal-arch-card-header">
+                            <span class="modal-arch-step">02</span>
+                            <span class="modal-arch-tag tag-core">Core Processing</span>
+                        </div>
+                        <h4 class="modal-arch-card-title">FastAPI Worker Cluster</h4>
+                        <p class="modal-arch-card-desc">Asynchronous REST microservices handling real-time payload sanitization, batch deduplication, and schema validation. Reduced external scraping costs by ~50% via smart in-memory caching.</p>
+                        <div class="modal-arch-chips">
+                            <span>FastAPI</span>
+                            <span>Pydantic v2</span>
+                            <span>Python 3.11</span>
+                            <span>~50% Cost Cut</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-arch-flow-indicator">&rarr;</div>
+
+                    <div class="modal-arch-card">
+                        <div class="modal-arch-card-header">
+                            <span class="modal-arch-step">03</span>
+                            <span class="modal-arch-tag tag-data">Storage &amp; DB</span>
+                        </div>
+                        <h4 class="modal-arch-card-title">Supabase PostgreSQL &amp; AWS S3</h4>
+                        <p class="modal-arch-card-desc">Normalized relational storage with Row Level Security (RLS), real-time change subscriptions for sales leads, and AWS S3 raw snapshot bucket archival.</p>
+                        <div class="modal-arch-chips">
+                            <span>Supabase PostgreSQL</span>
+                            <span>AWS S3</span>
+                            <span>Connection Pooler</span>
+                            <span>RLS</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-arch-flow-indicator">&rarr;</div>
+
+                    <div class="modal-arch-card">
+                        <div class="modal-arch-card-header">
+                            <span class="modal-arch-step">04</span>
+                            <span class="modal-arch-tag tag-llm">LLM Automation</span>
+                        </div>
+                        <h4 class="modal-arch-card-title">Plane Sync AI (Gemini Flash)</h4>
+                        <p class="modal-arch-card-desc">Automated sprint ticket generator and data synthesis agent powered by Google Gemini 1.5 Flash, generating actionable task summaries and syncing with internal tracking.</p>
+                        <div class="modal-arch-chips">
+                            <span>Gemini Flash API</span>
+                            <span>Plane Workspace</span>
+                            <span>Automated Sprints</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-arch-bottom">
+                    <div class="modal-arch-bottom-col">
+                        <div class="modal-arch-card-header">
+                            <span class="modal-arch-step">05</span>
+                            <span class="modal-arch-tag tag-frontend">Presentation Layer</span>
+                        </div>
+                        <h4 class="modal-arch-card-title">Angular Internal Operations Tooling</h4>
+                        <p class="modal-arch-card-desc">Single-page enterprise operations dashboard providing internal sales agents with real-time lead feeds, filters, search, and export workflows with sub-500ms API response SLAs.</p>
+                        <div class="modal-arch-chips">
+                            <span>Angular</span>
+                            <span>TypeScript</span>
+                            <span>RxJS State</span>
+                            <span>&lt;500ms SLA</span>
+                        </div>
+                    </div>
+                    <div class="modal-arch-bottom-col">
+                        <div class="modal-arch-card-header">
+                            <span class="modal-arch-step">06</span>
+                            <span class="modal-arch-tag tag-qa">Reliability &amp; QA</span>
+                        </div>
+                        <h4 class="modal-arch-card-title">Postman Automation &amp; Regression Testing</h4>
+                        <p class="modal-arch-card-desc">Comprehensive Newman CLI automated test collections validating endpoint status codes, response time SLA thresholds, and payload contracts across all microservice deployments.</p>
+                        <div class="modal-arch-chips">
+                            <span>Postman Collections</span>
+                            <span>Newman CLI</span>
+                            <span>Contract Testing</span>
+                            <span>CI/CD Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-arch-footer-note">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    <span>Proprietary Commercial Architecture developed during Software Engineer Internship at N-Compass TV. Source code protected under NDA.</span>
+                </div>
+            </div>
+        `;
+
+        function openModal(src, alt, customHtml = null) {
+            if (!modal) return;
+            modal.style.display = 'flex';
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+
+            if (customHtml) {
+                if (modalImg) modalImg.style.display = 'none';
+                if (modalCustomContent) {
+                    modalCustomContent.innerHTML = customHtml;
+                    modalCustomContent.style.display = 'block';
+                }
+                if (modalCaption) modalCaption.textContent = alt || '';
+            } else {
+                if (modalCustomContent) {
+                    modalCustomContent.innerHTML = '';
+                    modalCustomContent.style.display = 'none';
+                }
+                if (modalImg) {
+                    modalImg.style.display = 'block';
+                    modalImg.src = src;
+                }
+                if (modalCaption) modalCaption.textContent = alt || '';
+            }
+        }
+
+        function closeModal() {
+            if (!modal) return;
+            modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+            if (modalCustomContent) {
+                modalCustomContent.innerHTML = '';
+                modalCustomContent.style.display = 'none';
+            }
+            if (modalImg) {
+                modalImg.src = '';
+                modalImg.style.display = 'block';
+            }
+        }
+
+        document.querySelectorAll('.modal-image').forEach(item => {
+            item.addEventListener('click', function () {
+                if (this.id === 'ncompass-viewport') {
+                    const archActive = document.querySelector('.ncompass-tab[data-ncompass-view="arch"]')?.classList.contains('active');
+                    if (archActive) {
+                        openModal(null, 'Pipeline Architecture — Distributed scraping, Supabase DB & Gemini Flash LLM', ncompassExpandedArchHtml);
+                        return;
+                    }
+                }
+                const src = this.getAttribute('data-src') || (this.querySelector('img') && this.querySelector('img').src);
+                const alt = this.getAttribute('data-alt') || (this.querySelector('img') && this.querySelector('img').alt);
+                if (src) openModal(src, alt);
             });
         });
 
-        // Close modal when clicking the X
-        modalClose.addEventListener('click', function() {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Restore scrolling
-        });
+        if (modalClose) modalClose.addEventListener('click', closeModal);
+        if (modal) {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeModal();
+            });
+        }
 
-        // Close modal when clicking outside the image
-        modal.addEventListener('click', function(e) {
-            if (e.target === modal) {
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto'; // Restore scrolling
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal && modal.style.display === 'flex') {
+                closeModal();
             }
         });
 
-        // Close modal with Escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && modal.style.display === 'flex') {
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto'; // Restore scrolling
+        // 6. Interactive Project Screenshot / View Switcher
+        // Handles tab switching for SmartQuest, BookTrack, and FridgeWatch
+        document.querySelectorAll('.frame-tab:not(.ncompass-tab)').forEach(tab => {
+            tab.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                const parentFrame = this.closest('.project-frame');
+                if (!parentFrame) return;
+
+                parentFrame.querySelectorAll('.frame-tab:not(.ncompass-tab)').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+
+                const targetSrc = this.getAttribute('data-target-src');
+                const targetAlt = this.getAttribute('data-target-alt');
+                const targetCaption = this.getAttribute('data-target-caption');
+                const targetPos = this.getAttribute('data-target-pos') || 'top center';
+                const targetFit = this.getAttribute('data-target-fit') || 'cover';
+                const targetScale = this.getAttribute('data-target-scale') || '1';
+
+                const mainImg = parentFrame.querySelector('.frame-active-img');
+                const modalTrigger = parentFrame.querySelector('.frame-modal-trigger');
+                const captionEl = parentFrame.querySelector('.frame-caption-text');
+                const ambientBg = parentFrame.querySelector('.frame-ambient-bg');
+
+                if (mainImg && targetSrc) {
+                    mainImg.style.opacity = '0.2';
+                    setTimeout(() => {
+                        mainImg.src = targetSrc;
+                        mainImg.alt = targetAlt || '';
+                        mainImg.style.objectPosition = targetPos;
+                        mainImg.style.transform = `scale(${targetScale})`;
+
+                        if (targetFit === 'contain') {
+                            mainImg.style.objectFit = 'contain';
+                            mainImg.classList.add('phone-mockup');
+                            if (ambientBg) {
+                                ambientBg.style.backgroundImage = `url('${targetSrc}')`;
+                                ambientBg.classList.add('active');
+                            }
+                        } else {
+                            mainImg.style.objectFit = 'cover';
+                            mainImg.classList.remove('phone-mockup');
+                            if (ambientBg) {
+                                ambientBg.classList.remove('active');
+                            }
+                        }
+
+                        if (modalTrigger) {
+                            modalTrigger.setAttribute('data-src', targetSrc);
+                            modalTrigger.setAttribute('data-alt', targetAlt || '');
+                        }
+                        if (captionEl && targetCaption) {
+                            captionEl.textContent = targetCaption;
+                        }
+                        mainImg.style.opacity = '1';
+                    }, 140);
+                }
+            });
+        });
+
+        // Sync initial active tab settings for all project frames on page load
+        document.querySelectorAll('.project-frame').forEach(frame => {
+            const activeTab = frame.querySelector('.frame-tab.active:not(.ncompass-tab)');
+            if (activeTab) {
+                const targetPos = activeTab.getAttribute('data-target-pos');
+                const targetFit = activeTab.getAttribute('data-target-fit');
+                const targetScale = activeTab.getAttribute('data-target-scale');
+                const mainImg = frame.querySelector('.frame-active-img');
+                if (mainImg) {
+                    if (targetPos) mainImg.style.objectPosition = targetPos;
+                    if (targetScale) mainImg.style.transform = `scale(${targetScale})`;
+                    if (targetFit === 'contain') {
+                        mainImg.style.objectFit = 'contain';
+                    } else if (targetFit === 'cover') {
+                        mainImg.style.objectFit = 'cover';
+                    }
+                }
             }
         });
+
+        // Handles tab switching for N-Compass TV (Architecture Diagram vs. Brand Logo)
+        const ncompassTabs = document.querySelectorAll('.ncompass-tab');
+        const ncompassArchView = document.getElementById('ncompass-arch-view');
+        const ncompassLogoView = document.getElementById('ncompass-logo-view');
+        const ncompassCaption = document.getElementById('ncompass-caption');
+        const ncompassViewport = document.getElementById('ncompass-viewport');
+
+        if (ncompassTabs.length && ncompassArchView && ncompassLogoView) {
+            ncompassTabs.forEach(tab => {
+                tab.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    ncompassTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const view = this.getAttribute('data-ncompass-view');
+                    const caption = this.getAttribute('data-caption');
+
+                    if (view === 'arch') {
+                        ncompassLogoView.style.display = 'none';
+                        ncompassArchView.style.display = 'flex';
+                        if (ncompassViewport) {
+                            ncompassViewport.setAttribute('data-src', 'assets/Img/n-compass logo.jpg');
+                            ncompassViewport.setAttribute('data-alt', 'N-Compass TV Enterprise Architecture');
+                        }
+                    } else if (view === 'logo') {
+                        ncompassArchView.style.display = 'none';
+                        ncompassLogoView.style.display = 'block';
+                        if (ncompassViewport) {
+                            ncompassViewport.setAttribute('data-src', 'assets/Img/n-compass logo.jpg');
+                            ncompassViewport.setAttribute('data-alt', 'N-Compass TV — Enterprise digital billboard & media network partner');
+                        }
+                    }
+
+                    if (ncompassCaption && caption) {
+                        ncompassCaption.textContent = caption;
+                    }
+                });
+            });
+        }
     </script>
 </body>
-</html>
 
+</html>
